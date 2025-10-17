@@ -2,7 +2,9 @@
 <html lang="en"> 
 
     <head> 
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Request a New Workshop </title>
     </head>
 
     <body>
@@ -12,15 +14,42 @@
         </header>
 
         <main> 
+            
+            <h1> Request a New Workshop </h1>
 
+            <fieldset > 
+                <legend> Workshop Information </legend>
+              
+                <select name="requested-workshop"> 
+                    <option> Workshop1</option>
+                    <option> Workshop2</option>
+                    <option> Workshop3</option>
+                    <option> Workshop4</option>
+                    <option> Workshop5</option>
+                </select><br>
+
+                <label>
+                    Your Name 
+                    <input type="text" name="name" placeholder="Your Name">
+                </label><br>
+
+                <label>
+                    Due Date 
+                    <input type="date" name="due-date" >
+                </label><br>
+
+                <label>
+                    Request Description 
+                   <textarea name="request-description"> Request Description</textarea>
+                </label><br>
+
+                <input type="submit" value="Book">
+
+            </fieldset>
 
         </main>
 
 
         
     </body>
-
-
-
-
 </html>
