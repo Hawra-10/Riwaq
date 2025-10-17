@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Add a New Workshop </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+         xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <header>
+
+        </header>
+
+        <main> 
+            
+            <h1> Add a New Staff Member </h1>
+            
+            <form>
+                <div>
+                <fieldset > 
+                    <legend> Personal Information </legend>
+                    <!-- upload icon -->
+                    <label id="file-upload-label" for="workshop-photo" class="upload-box">
+                        <div class="icon-wrapper">
+                             <i class="fas fa-image main-icon"></i>
+                            <i class="fas fa-plus badge-icon"></i>
+                        </div>
+                    </label>
+
+                    <label> Upload File <br>
+                        <input type="text" placeholder="Chossen File" readonly>
+                        <input type="file" id="workshop-photo" hidden><br>
+                    </label>
+
+
+                    <label>
+                        Full Name 
+                        <input type="text" name="staff-name" placeholder="Full Name">
+                    </label><br>
+
+                    <label>
+                        Birth Date 
+                        <input type="date" name="Birth-date" >
+                    </label><br>
+
+                    <label>
+                        Email 
+                        <input type="email" name="staff-email" placeholder="Email" >
+                    </label><br>
+
+                    
+
+                </fieldset>
+                 </div>
+
+
+                <div>
+                <fieldset > 
+                    <legend> Professional Information </legend>
+                
+
+                    <label>
+                         Area of Expertize
+                        <textarea name="area-of-expertize" placeholder="Area of Expertize"></textarea>
+                    </label><br>
+
+
+                    <label>
+                         Skills
+                        <textarea name="skills" placeholder="Skills"></textarea>
+                    </label><br>
+
+
+                    <label>
+                         Education
+                        <textarea name="education" placeholder="Education"></textarea>
+                    </label><br>
+                      
+                </fieldset>
+                 <input type="submit" >
+
+                 </div>
+
+            </form>
+ 
+           
+        </main>
+
+
+        
+    </body>
+</html>
