@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Riwaq/Manage Staff Members </title>
-
+        <link rel="stylesheet" href="../style.css">
+    
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
          xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
@@ -20,22 +21,23 @@
             <h1> Manage Staff Members </h1>
             <div>
                 <form>
-                    <div> <i class="fa-solid fa-user fa-2x" ></i> Aroub Alswayyed 
+                    
+                    <div class="staff-members"> <i class="fa-solid fa-user" ></i> <span>Aroub Alswayyed</span> 
+                    <input type="checkbox" name="staff-to-delete"  > </div>
+                    
+                    <div class="staff-members"> <i class="fa-solid fa-user" ></i> <span>Shatha Marzuq</span>
                     <input type="checkbox" name="staff-to-delete" > </div>
                     
-                    <div> <i class="fa-solid fa-user fa-2x" ></i> Shatha Marzuq
+                    <div class="staff-members"> <i class="fa-solid fa-user" ></i> <span>Ahmad Musa </span>
                     <input type="checkbox" name="staff-to-delete" > </div>
                     
-                    <div> <i class="fa-solid fa-user fa-2x" ></i> Ahmad Musa 
+                    <div class="staff-members"> <i class="fa-solid fa-user" ></i> <span>Mohammad Ali </span>
                     <input type="checkbox" name="staff-to-delete" > </div>
                     
-                    <div> <i class="fa-solid fa-user fa-2x" ></i> Mohammad Ali 
+                    <div class="staff-members"> <i class="fa-solid fa-user" ></i> <span>Noara Saleh</span> 
                     <input type="checkbox" name="staff-to-delete" > </div>
                     
-                    <div> <i class="fa-solid fa-user fa-2x" ></i> Noara Saleh 
-                    <input type="checkbox" name="staff-to-delete" > </div>
-                    
-                    <div> <i class="fa-solid fa-user fa-2x" ></i> Salman Majed 
+                    <div class="staff-members"> <i class="fa-solid fa-user" ></i> <span>Salman Majed </span>
                     <input type="checkbox" name="staff-to-delete" > </div>
 
                     <button name="delete-staff"> Delete </button>
@@ -51,7 +53,7 @@
                 <fieldset > 
                     <legend> Personal Information </legend>
                     <!-- upload icon -->
-                    <label id="file-upload-label" for="workshop-photo" class="upload-box">
+                    <label id="file-upload-label" for="workshop-photo">
                         <div class="icon-wrapper">
                              <i class="fas fa-image main-icon"></i>
                             <i class="fas fa-plus badge-icon"></i>
