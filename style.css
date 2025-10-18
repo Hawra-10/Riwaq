@@ -3,10 +3,11 @@
    ================================= */
 
 #delete-staff-form {display: flex;
-      flex-wrap: wrap;
-     align-items: normal;}
+                    flex-wrap: wrap;
+                    align-items: normal;
+                    clear: both;}
 
-.staff-members{display: flex;
+.staff-members {display: flex;
                border: 1px solid ;
                border-radius: 0.3em;
                margin: 2%;
@@ -14,14 +15,36 @@
                width: 15em;
                height: 5em;
                align-items: center; 
-               justify-content: space-between;
-               order: 1;}
+               justify-content: space-between;}
 
-.staff-members i{font-size:3em;}   
+.staff-members i {font-size:3em;}   
 
 .staff-members span {font-size: 1.2em;}
 
-
 .staff-members input[type="checkbox"] {transform: scale(1.5);
                                        accent-color: rgb(42, 41, 41);}
-                                        
+
+button[form="delete-staff-form"] {float: right;
+                                  width: 10em;
+                                  height: 3em;
+                                  border-radius: 1.5em;
+                                  background-color: rgb(200, 8, 8);
+                                  border-color: rgb(200, 8, 8);
+                                  color: #ffffff;
+                                  clear: both;
+                                  margin-bottom: 0.5em;}                                        
+
+                                 
+/* =================================
+         Add a New Staff Member
+   ================================= */
+
+#staff-member-form {display: flex;
+                    flex-wrap: wrap;
+                    align-items: normal;
+                    width: 80%;
+                    margin: 0 auto;
+                   justify-content: space-between;}
+
+
+

@@ -19,6 +19,9 @@
 
         <main> 
             <h1> Manage Staff Members </h1>
+
+            <button name="delete-staff" form="delete-staff-form" > Delete </button>
+    
             <div>
                 <form id="delete-staff-form">
                     
@@ -40,16 +43,14 @@
                     <div class="staff-members"> <i class="fa-solid fa-user" ></i> <span>Salman Majed </span>
                     <input type="checkbox" name="staff-to-delete" > </div>
 
-                    <button name="delete-staff" > Delete </button>
-                      
                 </form>
             </div>
 
             <hr>
             <h1> Add a New Staff Member </h1>
             
-            <form>
-                <div>
+            <form id="staff-member-form">
+                <div id="personal">
                 <fieldset > 
                     <legend> Personal Information </legend>
                     <!-- upload icon -->
@@ -67,17 +68,17 @@
 
 
                     <label>
-                        Full Name 
+                        Full Name <br>
                         <input type="text" name="staff-name" placeholder="Full Name">
                     </label><br>
 
                     <label>
-                        Birth Date 
+                        Birth Date <br>
                         <input type="date" name="Birth-date" >
                     </label><br>
 
                     <label>
-                        Email 
+                        Email <br>
                         <input type="email" name="staff-email" placeholder="Email" >
                     </label><br>
 
@@ -87,25 +88,25 @@
                  </div>
 
 
-                <div>
+                <div id="professional">
                 <fieldset > 
                     <legend> Professional Information </legend>
                 
 
                     <label>
-                         Area of Expertize
+                         Area of Expertize<br>
                         <textarea name="area-of-expertize" placeholder="Area of Expertize"></textarea>
                     </label><br>
 
 
                     <label>
-                         Skills
+                         Skills<br>
                         <textarea name="skills" placeholder="Skills"></textarea>
                     </label><br>
 
 
                     <label>
-                         Education
+                         Education<br>
                         <textarea name="education" placeholder="Education"></textarea>
                     </label><br>
                       
