@@ -37,14 +37,14 @@ button[form="delete-staff-form"] {float: right;
                                  
 /* =================================
          Add a New Staff Member
-   ================================= */
-
+   
 #staff-member-form {display: flex;
                     flex-wrap: wrap;
                     align-items: normal;
                     width: 80%;
                     margin: 0 auto;
-                   justify-content: space-between;}
+                   justify-content: space-between;}================================= */
+
 
 
 
