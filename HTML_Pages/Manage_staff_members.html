@@ -19,8 +19,7 @@
 
         <main> 
             <h1> Manage Staff Members </h1>
-
-            <button name="delete-staff" form="delete-staff-form" > Delete </button>
+             <input type="submit" value="Delete" form="delete-staff-form">
     
             <div>
                 <form id="delete-staff-form">
@@ -47,13 +46,17 @@
             </div>
 
             <hr>
+
+            
             <h1> Add a New Staff Member </h1>
             
-            <form id="staff-member-form">
-                <div id="personal">
-                <fieldset > 
+            <form id="staff-member-form" class="forms" >
+                <div id="personal" class="form-column">
+                <fieldset  > 
                     <legend> Personal Information </legend>
+
                     <!-- upload icon -->
+                    <div class="file-upload-section">
                     <label id="file-upload-label" for="workshop-photo">
                         <div class="icon-wrapper">
                              <i class="fas fa-image main-icon"></i>
@@ -61,57 +64,63 @@
                         </div>
                     </label>
 
-                    <label> Upload File <br>
-                        <input type="text" placeholder="Chossen File" readonly> <!-- edit wirframe -->
-                        <input type="file" id="workshop-photo" hidden><br>
-                    </label>
+                    <div class="form-group">
+                    <label for="file-upload"> Upload File </label>
+                        <input name="file-upload" type="text" placeholder="Chossen File"  readonly>       <!-- edit wirframe -->
+                        <input type="file" id="workshop-photo" ><br>
+                    </div>
 
+                    </div>
 
-                    <label>
-                        Full Name <br>
-                        <input type="text" name="staff-name" placeholder="Full Name">
-                    </label><br>
+                    <div class="form-group">
+                        <label for="staff-name"> Full Name </label>
+                        <input type="text"  name="staff-name" placeholder="Full Name">
+                    <br>
+                    </div>
 
-                    <label>
-                        Birth Date <br>
-                        <input type="date" name="Birth-date" >
-                    </label><br>
+                    <div class="form-group">
+                        <label for="birth-date">Birth Date </label>
+                        <input type="date" name="birth-date" >
+                    <br>
+                    </div>
 
-                    <label>
-                        Email <br>
+                    <div class="form-group">
+                        <label for="staff-email">Email </label>
                         <input type="email" name="staff-email" placeholder="Email" >
-                    </label><br>
-
-                    
+                    <br>
+                    </div>
 
                 </fieldset>
                  </div>
 
 
-                <div id="professional">
+                <div id="professional" class="form-column">
                 <fieldset > 
                     <legend> Professional Information </legend>
                 
-
-                    <label>
-                         Area of Expertize<br>
+                    <div class="form-group">
+                        <label for="area-of-expertize">Area of Expertize</label>
                         <textarea name="area-of-expertize" placeholder="Area of Expertize"></textarea>
-                    </label><br>
+                    <br>
+                    </div>
 
-
-                    <label>
-                         Skills<br>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
                         <textarea name="skills" placeholder="Skills"></textarea>
-                    </label><br>
+                    <br>
+                    </div>
 
-
-                    <label>
-                         Education<br>
+                    <div class="form-group">
+                        <label for="education">Education</label>
                         <textarea name="education" placeholder="Education"></textarea>
-                    </label><br>
-                      
+                    <br>
+                    </div> 
+
                 </fieldset>
+
+                <div class="staff-submit-wrapper">
                  <input type="submit" value="Add" > <!-- edit wirframe -->
+                </div>
 
                  </div>
 
