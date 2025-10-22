@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Riwaq | Workshops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0;line-height:1.5;font-family:Arial,Helvetica,sans-serif}
+
+    /* ==== Header (بسيط وبدون ألوان) ==== */
+    .topbar{max-width:1100px;margin:0 auto;padding:16px 12px;display:grid;grid-template-columns:80px 1fr 80px;align-items:center}
+    .logo{width:72px;height:72px;border:1px solid #000;display:flex;align-items:center;justify-content:center;font-size:12px}
+    .site-title{text-align:center}
+    .site-title h1{margin:0 0 6px;font-size:32px}
+    .site-title p{margin:0;font-size:13px}
+
+    nav{border-top:1px solid #000;border-bottom:1px solid #000}
+    .nav-wrap{max-width:1100px;margin:0 auto;padding:8px 12px;display:flex;gap:18px;overflow-x:auto}
+    .nav-wrap a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+    .nav-wrap a:hover{border-bottom-color:#000}
+
+    main{max-width:1100px;margin:0 auto;padding:20px 12px 64px}
+    .breadcrumbs{font-size:13px;margin:6px 0 4px}
+    .breadcrumbs a{text-decoration:none}
+    .page-head{margin-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .page-head h2{margin:0;font-size:36px;font-weight:800;letter-spacing:.3px}
+    .sort{display:flex;align-items:center;gap:8px}
+    select{padding:6px 8px;border:1px solid #000;background:transparent}
+
+    /* ==== Grid ==== */
+    .cards{margin-top:24px;display:flex;flex-wrap:wrap;gap:26px}
+
+    /* ==== Card: الصورة تغطي الكارد كله، والنص في الوسط، وشريط السعر مستقل ==== */
+    .card{
+      position:relative;
+      flex:1 1 340px;          /* ٣ أعمدة غالباً */
+      max-width:360px;
+      min-height:520px;        /* مستطيل */
+      border:1px solid #000;
+      border-right-width:3px;
+      border-bottom-width:3px;
+      background:#fff;         /* أساس أبيض */
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+    }
+
+    /* الخلفية: صورة ممتدة مع شفافية */
+    .card .bg{
+      position:absolute; inset:0;
+      width:100%; height:100%;
+      object-fit:cover;
+      opacity:.12;             /* شفافية منخفضة */
+      filter:grayscale(100%);  /* أبيض وأسود فقط */
+      pointer-events:none;
+    }
+
+    /* محتوى فوق الصورة */
+    .card-inner{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      padding:16px 16px 88px;  /* نترك مساحة لشريط السعر أسفل */
+      height:100%;
+    }
+    .card-header{
+      border-bottom:1px solid #000;
+      padding-bottom:8px;
+    }
+    .card-header h3{
+      margin:0;
+      font-size:16px; line-height:1.3; font-weight:700;
+    }
+
+    /* النص وسط الكارد */
+    .centered{
+      margin:0; flex:1;
+      display:flex; align-items:center; justify-content:center;
+      text-align:center; padding:12px;
+      border:1px solid #000;  /* إطار خفيف مثل الوايرفريم */
+      font-size:18px; font-weight:600;
+    }
+
+    /* شريط السعر/الموقع: صندوق أبيض مستقل فوق الصورة */
+    .meta{
+      position:absolute; left:16px; right:16px; bottom:16px;
+      background:#fff;
+      border:1px solid #000; border-bottom-width:4px;
+      padding:10px;
+      font-size:12px;
+    }
+    .price{font-weight:700;display:block}
+    .location{display:block}
+
+    /* Footer */
+    footer{border-top:1px solid #000}
+    .footer-wrap{max-width:1100px;margin:0 auto;padding:28px 12px 12px;text-align:center}
+    .footer-wrap h2{margin:0 0 8px}
+    .footer-wrap p.about{max-width:760px;margin:0 auto 16px;font-size:14px}
+    .social{display:flex;gap:10px;justify-content:center;margin-bottom:12px}
+    .social a{width:28px;height:28px;border:1px solid #000;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px}
+    .foot-bottom{border-top:1px solid #000;padding:8px 12px;margin-top:10px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;font-size:12px}
+    .foot-bottom a{text-decoration:none}
+    .copyright{text-align:left;font-size:12px;padding:8px 12px}
+
+    @media (max-width:500px){
+      .site-title h1{font-size:24px}
+      .page-head h2{font-size:28px}
+      .card{flex-basis:100%;max-width:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Logo</div>
+    <div class="site-title">
+      <h1>Riwaq</h1>
+      <p>A meeting place of emotions and arts that touch the heart</p>
+    </div>
+    <div></div>
+  </header>
+
+  <nav aria-label="Main">
+    <div class="nav-wrap">
+      <a href="#">Home Page</a>
+      <a href="#">Workshops</a>
+      <a href="#">Our Newsletter</a>
+      <a href="#">Provider's Dashboard</a>
+      <a href="#">About Us</a>
+      <a href="#">Customer's Dashboard</a>
+    </div>
+  </nav>
+
+  <main>
+    <p class="breadcrumbs"><a href="#">Home</a> &gt; <span>Workshops</span></p>
+
+    <div class="page-head">
+      <h2>Workshops</h2>
+      <form class="sort" action="#" method="get">
+        <label for="sort"></label>
+        <select id="sort" name="sort">
+          <option selected>Sort</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="price-low">Price: Low to High</option>
+        </select>
+      </form>
+    </div>
+
+    <section class="cards" aria-label="Workshop cards">
+      <!-- استخدم نفس الصورة لكل البطاقات الآن؛ غير src لاحقاً لو تبغى -->
+      <!-- 1 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 7 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 8 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+      <!-- 9 -->
+      <article class="card">
+        <img class="bg" src="your-image.jpg" alt="">
+        <div class="card-inner">
+          <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
+          <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
+        </div>
+        <div class="meta"><span class="price">00.00 SAR</span><span class="location">location</span></div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <h2>About Riwaq</h2>
+      <p class="about">Riwaq is an Arab platform for design and provides the best art workshops for all ages and levels. We strive to provide a creative and safe environment for developing artistic skills and encouraging and nurturing talent.</p>
+
+      <div class="social" aria-label="Social links">
+        <a href="#" title="F">F</a>
+        <a href="#" title="I">I</a>
+        <a href="#" title="Y">Y</a>
+        <a href="#" title="M">@</a>
+      </div>
+
+      <div class="foot-bottom">
+        <a href="#">Terms &amp; Conditions</a><span>|</span><a href="#">Privacy Policy</a>
+      </div>
+
+      <div class="copyright">
+        <small>Copyright © 2025 Riwaq. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
