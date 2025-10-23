@@ -229,4 +229,51 @@ input[type="submit"]:hover {
 }
 
 
+/* =================================
+          Staff Member Table 
+   ================================= */
 
+   table {
+            width: 100%;
+            border-collapse: collapse; /* Remove space between borders */
+        }
+
+        th, td {
+            border: 1px solid #e2e8f0; /* Light gray border */
+            padding: 1rem; /* 16px padding */
+            text-align: center;
+            font-size: 0.875rem; /* 14px */
+        }
+
+        /* Table Header */
+        thead th {
+            background-color: #4a5568; /* Dark gray background */
+            color: #ffffff; /* White text */
+            font-weight: 600; /* Semibold */
+            padding-top: 0.75rem; /* 12px */
+            padding-bottom: 0.75rem; /* 12px */
+        }
+
+        /* Table Body */
+        tbody td {
+            color: #2d3748; /* Darker text */
+        }
+
+
+         /* Style for cells that span multiple rows */
+        tbody .cell-rowspan {
+            vertical-align: middle; /* Center content vertically */
+            text-align: center;
+        }
+
+        /* Skills list styling */
+        tbody td ul {
+            margin: 0;
+            padding-left: 1.25rem; /* 20px */
+            list-style-type: disc;
+        }
+
+        tbody td ul ul {
+            margin-top: 0.25rem; /* 4px */
+            list-style-type: circle;
+        }
