@@ -17,7 +17,7 @@
 
     main {
       width: 100%;
-      max-width: 500px; /* حجم متوسط للمربع */
+      max-width: 500px; 
     }
 
     .breadcrumbs {
@@ -67,7 +67,7 @@
       height: 100px;
       resize: vertical;
     }
-    /* This is the container for the stars */
+    
         .rating-stars {
             display: flex;
             /* This makes the stars appear in the correct order (1-5) even though
@@ -86,7 +86,7 @@
 
         /* Style the star labels */
         .rating-stars label {
-            font-size: 2.25rem; /* 36px */
+            font-size: 2rem; /* 36px */
             line-height: 2.5rem; /* 40px */
             /* This is the empty star color, matching your image */
             color: #d1d5db; /* Tailwind's gray-400 */
@@ -113,25 +113,17 @@
         .rating-stars input[type="radio"]:checked ~ label {
             color: #f59e0b; /* Tailwind's amber-500 */
         }
-    /* تنسيق rate + النجوم 
-    .rate-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+    
+   
+      
 
     .rate-row label {
       font-weight: bold;
     }
 
-    .stars {
-      display: flex;
-      gap: 5px;
-      font-size: 22px;
-      cursor: pointer;
-    } 
+  
 
-    /* زر الإرسال بالنص */
+   
     input[type="submit"] {
       width: 100px;
       padding: 8px;
@@ -156,8 +148,14 @@
         <select id="workshop" name="workshop">
           <option value="">Workshop Name</option>
           <option value="wooden">Wooden Surface Photography</option>
-          <option value="painting">Painting Basics</option>
-          <option value="ceramics">Ceramics Workshop</option>
+          <option value="Metal">Metal Engraving Art</option>
+          <option value="Art">Clay Art & Pottery</option>
+          <option value="Embroidery">Embroidery & Fabric Art</option>
+          <option value="Candle">Candle Making & Scents</option>
+          <option value="Leather">Leather Crafting Basics</option>
+          <option value="Resin">Resin Art Workshop</option>
+          <option value="Soap">Soap Making with Natural Oils</option>
+          <option value="Calligraphy">Calligraphy & Hand Lettering</option>
         </select>
       </div>
 
@@ -167,31 +165,24 @@
  
   
   <input type="radio" id="star5" name="rating" value="5" />
-  <label for="star5" title="5 stars">&#9734;</label>
+  <label for="star5" title="5 stars">&#9733;</label>
   
   <input type="radio" id="star4" name="rating" value="4" />
-  <label for="star4" title="4 stars">&#9734;</label>
+  <label for="star4" title="4 stars">&#9733;</label>
   
   <input type="radio" id="star3" name="rating" value="3" />
-  <label for="star3" title="3 stars">&#9734;</label>
+  <label for="star3" title="3 stars">&#9733;</label>
   
   <input type="radio" id="star2" name="rating" value="2" />
-  <label for="star2" title="2 stars">&#9734;</label>
+  <label for="star2" title="2 stars">&#9733;</label>
   
   <input type="radio" id="star1" name="rating" value="1" />
-  <label for="star1" title="1 star">&#9734;</label>
+  <label for="star1" title="1 star">&#9733;</label>
     </fieldset>
 
-      <!--<div class="rate-row">
+      <div class="rate-row">
         <label for="review">Rate &amp; Review</label>
-        <div class="stars">
-          <span>☆</span>
-          <span>☆</span>
-          <span>☆</span>
-          <span>☆</span>
-          <span>☆</span>
-        </div>
-      </div>-->
+      </div>
 
       <textarea id="review" name="review" placeholder="Write your feedback here..."></textarea>
 
