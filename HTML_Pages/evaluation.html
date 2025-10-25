@@ -67,6 +67,21 @@
       height: 100px;
       resize: vertical;
     }
+
+
+    .rate-row {
+      display: flex;
+      justify-content: space-between; /* left text, right stars */
+      align-items: flex-start;
+      width: 100%;
+    }
+
+
+    .rate-label {
+      font-weight: bold;
+      font-size: 16px;
+      line-height:2.5;
+    }
     
         .rating-stars {
             display: flex;
@@ -86,7 +101,7 @@
 
         /* Style the star labels */
         .rating-stars label {
-            font-size: 2rem; /* 36px */
+            font-size: 1.8rem; /* 36px */
             line-height: 2.5rem; /* 40px */
             /* This is the empty star color, matching your image */
             color: #d1d5db; /* Tailwind's gray-400 */
@@ -113,13 +128,7 @@
         .rating-stars input[type="radio"]:checked ~ label {
             color: #f59e0b; /* Tailwind's amber-500 */
         }
-    
-   
-      
 
-    .rate-row label {
-      font-weight: bold;
-    }
 
   
 
@@ -160,28 +169,25 @@
       </div>
 
 
-
-    <fieldset class="rating-stars">
- 
-  
-  <input type="radio" id="star5" name="rating" value="5" />
-  <label for="star5" title="5 stars">&#9733;</label>
-  
-  <input type="radio" id="star4" name="rating" value="4" />
-  <label for="star4" title="4 stars">&#9733;</label>
-  
-  <input type="radio" id="star3" name="rating" value="3" />
-  <label for="star3" title="3 stars">&#9733;</label>
-  
-  <input type="radio" id="star2" name="rating" value="2" />
-  <label for="star2" title="2 stars">&#9733;</label>
-  
-  <input type="radio" id="star1" name="rating" value="1" />
-  <label for="star1" title="1 star">&#9733;</label>
-    </fieldset>
-
       <div class="rate-row">
-        <label for="review">Rate &amp; Review</label>
+         <div class="rate-label">Rate &amp; Review</div>
+
+        <fieldset class="rating-stars">
+          <input type="radio" id="star5" name="rating" value="5" />
+          <label for="star5" title="5 stars">&#9733;</label>
+          
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4" title="4 stars">&#9733;</label>
+          
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="3 stars">&#9733;</label>
+          
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2" title="2 stars">&#9733;</label>
+          
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1" title="1 star">&#9733;</label>
+        </fieldset>
       </div>
 
       <textarea id="review" name="review" placeholder="Write your feedback here..."></textarea>
