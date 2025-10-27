@@ -90,11 +90,17 @@
      /*border:1px solid #000;*/
       font-size:18px; font-weight:600;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease, background-color 0.3s ease;
+      position: absolute;
+      top: 20px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
     }
 
     .card:hover .centered {
     opacity: 1; 
+    color: white;
     }
 
     
@@ -112,7 +118,32 @@
     .card:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
-}*/
+}
+
+
+.card .bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+.card .blurred-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* مخفية قبل التمرير */
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .blurred-img {
+  opacity: 1; /* إظهار الصورة الضبابية عند التمرير */
+}
+
 
 
     /* Footer */
@@ -174,6 +205,8 @@
       <!-- 1 -->
       <article class="card">
         <img class="bg" src="../images/wooden2.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurWood.JPEG" alt="">
+
         <div class="card-inner">
           <div class="card-header"><h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3></div>
           <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.</p>
@@ -184,6 +217,8 @@
       <!-- 2 -->
       <article class="card">
         <img class="bg" src="../images/m3dn.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurM3.JPEG" alt="">
+
         <div class="card-inner">
           <div class="card-header"><h3>Metal Engraving Art<br>Etch Your Creativity in Steel</h3></div>
           <p class="centered">Design and carve patterns or names onto small metal plates or jewelry pieces, turning raw metal into personalized keepsakes.</p>
@@ -194,6 +229,7 @@
       <!-- 3 -->
       <article class="card">
         <img class="bg" src="../images/pottery.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurPottery.JPEG" alt="">
         <div class="card-inner">
           <div class="card-header"><h3>Clay Art & Pottery<br>Shape Your Imagination</h3></div>
           <p class="centered">Discover the joy of creating with your hands — mold, carve, and paint your own ceramic pieces to take home.</p>
@@ -204,6 +240,7 @@
       <!-- 4 -->
       <article class="card">
         <img class="bg" src="../images/embroidery.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurEmbroidery.JPEG" alt="">
         <div class="card-inner">
           <div class="card-header"><h3>Embroidery & Fabric Art<br>Threads That Tell Stories</h3></div>
           <p class="centered">Bring color to cloth by learning creative stitching patterns and designs for clothes, hoops, and home decor.</p>
@@ -214,6 +251,7 @@
       <!-- 5 -->
       <article class="card">
         <img class="bg" src="../images/candel2.jpeg" alt="">
+        <img class="blurred-img" src="../images/ blurCandel.JPEG" alt="">
         <div class="card-inner">
           <div class="card-header"><h3>Candle Making & Scents<br>Light Up Your Space with Your Own Creation</h3></div>
           <p class="centered">Mix soothing fragrances and colors to craft personalized candles perfect for gifts or cozy nights in.</p>
@@ -224,6 +262,7 @@
       <!-- 6 -->
       <article class="card">
         <img class="bg" src="../images/Leather.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurLeather.JPEG" alt="">
         <div class="card-inner">
           <div class="card-header"><h3>Leather Crafting Basics<br>From Hide to Handmade</h3></div>
           <p class="centered">Learn how to design, cut, and stitch your own leather wallet or keychain using traditional techniques.</p>
@@ -234,6 +273,7 @@
       <!-- 7 -->
       <article class="card">
         <img class="bg" src="../images/Resin.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurResin.JPEG" alt="">
         <div class="card-inner">
           <div class="card-header"><h3>Resin Art Workshop<br>Freeze Time in Art</h3></div>
           <p class="centered">Create stunning resin pieces — from ocean-inspired coasters to jewelry — blending colors, patterns, and texture.</p>
@@ -244,6 +284,7 @@
       <!-- 8 -->
       <article class="card">
         <img class="bg" src="../images/Soap.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurSoap.JPEG" alt="">
         <div class="card-inner">
           <div class="card-header"><h3>Soap Making with Natural Oils<br>Pure. Simple. Handmade./h3></div>
           <p class="centered">Blend essential oils and natural ingredients to create custom organic soaps that look and smell amazing.</p>
@@ -254,6 +295,7 @@
       <!-- 9 -->
       <article class="card">
         <img class="bg" src="../images/write.jpeg" alt="">
+        <img class="blurred-img" src="../images/blurWrite.JPEG" alt="">
         <div class="card-inner">
           <div class="card-header"><h3>Calligraphy & Hand Lettering<br>Write with Style and Soul</h3></div>
           <p class="centered">Learn the art of elegant writing — from brush strokes to designing personalized cards and quotes.</p>
