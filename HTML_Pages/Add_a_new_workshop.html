@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Riwaq/Add a New Workshop </title>
+        <link rel="stylesheet" href="../style.css">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
          xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,41 +21,51 @@
             <div>
             <h1> Add a New Workshop </h1>
             
-            <form>
+            <form class="forms">
+            <div class="form-column">
             <fieldset > 
                 <legend> Workshop Information </legend>
                 
-                <label id="file-upload-label" for="workshop-photo" class="upload-box">
-                    <div class="icon-wrapper">
-                        <i class="fas fa-image main-icon"></i>
-                        <i class="fas fa-plus badge-icon"></i>
+                <!-- upload icon -->
+                    <div class="file-upload-section">
+                    <label id="file-upload-label" for="workshop-photo">
+                        <div class="icon-wrapper">
+                             <i class="fas fa-image main-icon"></i>
+                            <i class="fas fa-plus badge-icon"></i>
+                        </div>
+                    </label>
+
+                    <div class="form-group">
+                    <label for="file-upload"> Upload File </label>
+                        <input name="file-upload" type="text" placeholder="Chossen File"  readonly>       <!-- edit wirframe -->
+                        <input type="file" id="workshop-photo" ><br>
                     </div>
-                </label>
 
-                <label> Upload File <br>
-                    <input type="text" placeholder="Chossen File" readonly> <!-- edit wirframe -->
-                    <input type="file" id="workshop-photo" hidden><br>
-                </label>
+                    </div>
 
 
-                <label>
-                    Workshop Name 
+                <div class="form-group">
+                <label for="name"> Workshop Name </label>
                     <input type="text" name="name" placeholder="Workshop Name">
-                </label><br>
+                <br></div>
 
-                <label>
-                    Workshop Price 
-                    <input type="number" name="price" placeholder="Workshop Price" >
-                </label><br>
+                <div class="form-group">
+                <label for="price"> Workshop Price </label>
+                    <input id="number-column" type="number" name="price" placeholder="Workshop Price" >
+                <br></div>
 
-                <label>
-                    Workshop Description 
+                <div class="form-group">
+                <label for="workshop-description"> Workshop Description </label>
                    <textarea name="workshop-description" placeholder="Workshop Description"></textarea>
-                </label><br>
+                <br></div>
 
+                 <div class="workshop-submit-wrapper">
                 <input type="submit" >
+                 </div>
 
             </fieldset>
+
+            </div>
             </form>
 
             </div>

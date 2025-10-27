@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Staff Member Profile</title>
-  <style>
+  <link rel="stylesheet" href="../style.css">
+  <!--<style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
@@ -50,49 +51,92 @@
       justify-content: center;
       margin: 0 auto;
     }
-  </style>
+  </style>--> 
 </head>
 <body>
   <main>
     <p class="breadcrumbs"><a href="#">Home</a> &gt; <a href="#">About Us</a> &gt; <span>Staff Member</span></p>
 
     <h2>Staff Member Profile</h2>
+  
+    <div class="table-container">
+        <table>
+            <!-- Table Header -->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Photo</th>
+                    <th>DoB</th>
+                    <th>Email</th>
+                    <th>Area of expertice</th>
+                    <th>Skills</th>
+                    <th>Education</th>
+                </tr>
+            </thead>
+            <!-- Table Body -->
+            <tbody>
+                <!-- Row 1 -->
+                <tr>
+                    <td rowspan="3" class="cell-rowspan align-left">Aroub Alswayyed</td>
+                    <td rowspan="3" class="cell-rowspan">
+                        <!-- Using a unicode icon as a placeholder for the photo -->
+                        <span class="photo-placeholder" title="User Photo Icon">&#128100;</span>
+                    </td>
+                    <td rowspan="3" class="cell-rowspan">XX/XX/XXXX</td>
+                    <td rowspan="3" class="cell-rowspan">Aroub@hotmail.com</td>
+                    
+                    <!-- Area, Skills, and Education for the first row -->
+                    <td>Area1</td>
+                    <td rowspan="3" class="cell-rowspan ">
+                        <ul>
+                            <li>Skill 1
+                                <ul>
+                                    <li>SubSkill</li>
+                                </ul>
+                            </li>
+                        
+                            <li>Skill 2
+                                <ul>
+                                    <li>SubSkill</li>
+                                </ul>
+                            </li>
+                          </ul>
+                    </td>
+                    <td rowspan="3" class="cell-rowspan ">
+                        <!-- This content is now a nested list -->
+                        <ul>
+                            <li>XXXX-XXXX:
+                                <ul>
+                                    <li>B.A. in Computer Science</li>
+                                    <li>GPA 4.5</li>
+                                </ul>
+                            </li>
+                            <li>XXXX-XXXX:
+                                <ul>
+                                    <li>M.Sc. in AI– Ipsum Institute</li>
+                                    <li>GPA: 4.3</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Photo</th>
-        <th>DoB</th>
-        <th>Email</th>
-        <th>Area of expertise</th>
-        <th>Skills</th>
-        <th>Education</th>
-      </tr>
-      <tr>
-        <td>Aroub Alswayyed</td>
-        <td>
-          <div class="photo-box">📷</div>
-        </td>
-        <td>XX/XX/XXXX</td>
-        <td>Aroub@hotmail.com</td>
-        <td>
-          Area1<br>
-          Area2<br>
-          Area3
-        </td>
-        <td style="text-align:left;">
-          • Skill1<br>
-          • Skill2<br>
-          • Skill3
-        </td>
-        <td style="text-align:left;">
-          XXXX-XXXX<br>
-          B.Sc in Computer Science<br>
-          Lorem University<br>
-          GPA: 4.3
-        </td>
-      </tr>
-    </table>
+                <!-- Row 2 -->
+                <tr>
+                    <!-- Name, Photo, DoB, Email, and Education cells are omitted
+                         because they are covered by the rowspan from Row 1 -->
+                    <td>Area2</td>
+                    
+                </tr>
+
+                <!-- Row 3 -->
+                <tr>
+                    <!-- Name, Photo, DoB, Email, and Education cells are omitted -->
+                    <td>Area3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
   </main>
 </body>
 </html>

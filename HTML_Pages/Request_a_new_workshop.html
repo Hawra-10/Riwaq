@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Riwaq/Request a New Workshop </title>
+        <link rel="stylesheet" href="../style.css">
     </head>
 
     <body>
@@ -17,34 +18,37 @@
             <div>
             <h1> Request a New Workshop </h1>
 
-            <form>
+            <form class="forms">
             <fieldset> 
                 <legend> Workshop Information </legend>
               
+                 <div class="form-group">
                 <select name="requested-workshop"> 
                     <option> Workshop1</option>
                     <option> Workshop2</option>
                     <option> Workshop3</option>
                     <option> Workshop4</option>
                     <option> Workshop5</option>
-                </select><br>
+                </select><br></div>
 
-                <label>
-                    Your Name 
+                <div class="form-group">
+                <label for="name"> Your Name </label>
                     <input type="text" name="name" placeholder="Your Name">
-                </label><br>
-
-                <label>
-                    Due Date 
+                <br></div>
+                
+                <div class="form-group">
+                <label for="due-date"> Due Date </label>
                     <input type="date" name="due-date" >
-                </label><br>
-
-                <label>
-                    Request Description 
+                <br></div>
+                
+                <div class="form-group">
+                <label for="request-description"> Request Description </label>
                    <textarea name="request-description" placeholder="Request Description"></textarea>
-                </label><br>
+                <br></div>
 
+                <div class="workshop-submit-wrapper">
                 <input type="submit" value="Book">
+                 </div>
 
             </fieldset>
             </form>
