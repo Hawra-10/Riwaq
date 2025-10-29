@@ -50,7 +50,7 @@ header h2{text-align: center; margin-top: 60px;}
     display: flex; 
     flex-direction:row; 
     flex-wrap: nowrap ; 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;}
 
 
@@ -383,4 +383,50 @@ header h2{text-align: center; margin-top: 60px;}
     .card:hover .blurred-img {
       opacity: 1;
     }
+
+
+    
+      .rate-row {
+      display: flex;
+      justify-content:flex-start; /* left text, right stars */
+      align-items: flex-start;
+      /*width: 100%;*/
+      margin: 0;
+    }
+
+
+    .rate-label {
+      font-weight: bold;
+      font-size: 16px;
+      line-height:2.5;
+    }
+    
+    .rating-stars {
+        display: flex;
+        /* This makes the stars appear in the correct order (1-5) even though
+            the HTML is reversed (5-1). This is the key to the CSS trick. */
+        flex-direction: row-reverse;
+        justify-content: flex-start; /* Aligns stars to the right */
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Hide the actual radio buttons */
+    .rating-stars input[type="radio"] {
+        display: none;
+    }
+
+    /* Style the star labels */
+    .rating-stars label {
+        font-size: 1.8rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+        /* This is the empty star color, matching your image */
+        color: #d1d5db; /* Tailwind's gray-400 */
+        cursor: pointer;
+        transition: color 0.2s ease;
+    }
+    /*.rating-stars input[type="radio"]:checked ~ label {
+                color: #f59e0b; /* Tailwind's amber-500 
+            }*/
 
