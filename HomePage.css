@@ -1,11 +1,3 @@
-/**#workshops{flex: fixd;}**/
-
-/*#FirstWorkShops{display: flex;  flex-direction:row;  flex-wrap: wrap ; justify-content: space-around ; align-items: center; }
-#SecondWorkShops{display: flex;  flex-direction:row;  flex-wrap: wrap ; justify-content: space-around ; align-items: center; }
-
-#w1, #w2, #w3, #w4 {background: lightgray; padding: 20px; margin: 10px; border: 1px solid black; text-align: center; } 
-{flex: fixd; background-attachment: fixed; background-color: darkgray; text-align: center;}**/
-
 /*header*/
 
 header h1{
@@ -51,8 +43,9 @@ header h2{text-align: center; margin-top: 60px;}
     flex-direction:row; 
     flex-wrap: nowrap ; 
     justify-content: center;
-    align-items: center;}
-
+    align-items: center;
+     
+}
 
 /*workshops
 .workshops {
@@ -317,7 +310,7 @@ header h2{text-align: center; margin-top: 60px;}
       color: white;
       transition: opacity 0.3s ease, background-color 0.3s ease;
       position: absolute;
-      top: 20px;
+      top:20px;
       bottom: 20px;
       left: 20px;
       right: 20px;
