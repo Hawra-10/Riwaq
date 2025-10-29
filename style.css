@@ -328,12 +328,8 @@ input[type="submit"]:hover {
             margin-top: 0.25rem; /* 4px */
             list-style-type: circle;
         }
-
-
-
-<<<<<<< HEAD
-
-    /* =================================
+        
+  /* =================================
                 Workshops Page
     ================================= */
   /* === Reset & Basic Settings === */
@@ -529,7 +525,7 @@ body {
   opacity: 1;
 }
 
-
-
-=======
->>>>>>> 237c0dae16adb3619398757e962a6703fcdfa539
+.breadcrumbs a {
+  color: black;            
+  text-decoration: none;   
+}
