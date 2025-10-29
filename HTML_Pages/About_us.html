@@ -1,117 +1,235 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
-    <head> 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Riwaq/About Us </title>
-         <link rel="stylesheet" href="../style.css">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Riwaq/About Us </title>
+    <link rel="stylesheet" href="../style.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-         xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-    <body>
+<body>
 
-        <header>
+    <!-- Header Section -->
+    <header>
+        <img src="" alt="Riwaq logo">
+        <h1>Riwaq</h1>
+        <p>A meeting place of emotions and arts that touch the heart</p>
 
-        </header>
+        <h2>Vision</h2>
+        <p>To be the leading Arab platform that empowers new insights to discover and<br> develop their artistic talent,
+            and to enrich the cultural scene by making art and<br> creative education available to all in an inspiring
+            and stimulating environment.</p>
 
-        <main> 
-           
 
-            <hr>
+        <!-- Vision and Mission Section -->
+        <!--<div id="VM">
+            <div style="flex:1; text-align: center ;"> 
+                <h2>Vision</h2>
+                <p>To be the leading Arab platform that <br>empowers new insights to discover and<br> develop their artistic talent, and to enrich<br> the cultural scene by making art and<br> creative education available to all in an<br> inspiring and stimulating environment.</p>
+            </div>
+            <div style="flex:1; text-align: center;"> 
+                <h2>Mission</h2>
+                <p>Our mission is to build a vibrant Arab art community<br> by providing high-quality inclusive art workshops<br> covering a wide range of disciplines for all ages and<br> levels, creating a safe and inclusive learning<br> environment where every individual feels supported<br>and encouraged to express their creativity without<br>restrictions, empowering individuals by developing<br> their artistic and technical skills, boosting their self.<br> Confidence, and transforming their passion into<br> tangible achievement.</p>
+            </div>    
+        </div>-->
 
-            
-            <h1> Add a New Staff Member </h1>
-            
-            <form id="staff-member-form" class="forms" >
-                <div id="personal" class="form-column">
-                <fieldset  > 
+        <!-- Navigation Menu -->
+        <div id="navigation">
+            <div><a href="HomPage.html">Home Page</a></div>
+            <div><a href="Workshops.html">Workshops</a></div>
+            <div><a href="#newsletter">Our Newsletter</a></div>
+            <div><a href="Provider's_Dashboard.html">Provider's Dashboard</a> </div>
+            <div><a href="About_us.html">About Us</a></div>
+            <div><a href="Customers_Dashboard.html">Customer's Dashboard</a></div>
+        </div> <br>
+    </header>
+
+    <main>
+
+        <h1>Our Staff</h1>
+
+        <table cellpadding="10" cellspacing="10">
+            <tr>
+                <td bgcolor="#e5e5e5">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../images\aroub.jpeg" alt="Aroub Alswayyed" width="60" height="60">
+                            </td>
+                            <td>
+                                <a href="#">Aroub Alswayyed</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td bgcolor="#e5e5e5">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../images\shatha.jpeg" alt="Shatha Marzuq" width="60" height="60">
+                            </td>
+                            <td>
+                                <a href="#">Shatha Marzuq</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td bgcolor="#e5e5e5">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../images\ahmad.jpeg" alt="Ahmad Musa" width="60" height="60">
+                            </td>
+                            <td>
+                                <a href="#">Ahmad Musa</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td bgcolor="#e5e5e5">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../images\mohammad.jpeg" alt="Mohammad Ali" width="60" height="60">
+                            </td>
+                            <td>
+                                <a href="#">Mohammad Ali</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td bgcolor="#e5e5e5">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../images\noura.jpeg" alt="Noura Saleh" width="60" height="60">
+                            </td>
+                            <td>
+                                <a href="#">Noura Saleh</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td bgcolor="#e5e5e5">
+                    <table>
+                        <tr>
+                            <td>
+                                <img src="../images\salman.jpeg" alt="Salman Majed" width="60" height="60">
+                            </td>
+                            <td>
+                                <a href="#">Salman Majed</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+
+        <h1> Add a New Staff Member </h1>
+
+        <form id="staff-member-form" class="forms">
+            <div id="personal" class="form-column">
+                <fieldset>
                     <legend> Personal Information </legend>
 
                     <!-- upload icon -->
                     <div class="file-upload-section">
-                    <label id="file-upload-label" for="workshop-photo">
-                        <div class="icon-wrapper">
-                             <i class="fas fa-image main-icon"></i>
-                            <i class="fas fa-plus badge-icon"></i>
-                        </div>
-                    </label>
+                        <label id="file-upload-label" for="workshop-photo">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-image main-icon"></i>
+                                <i class="fas fa-plus badge-icon"></i>
+                            </div>
+                        </label>
 
-                    <div class="form-group">
-                    <label for="file-upload"> Upload File </label>
-                        <input name="file-upload" type="text" placeholder="Chossen File"  readonly>       <!-- edit wirframe -->
-                        <input type="file" id="workshop-photo" ><br>
-                    </div>
+                        <div class="form-group">
+                            <label for="file-upload"> Upload File </label>
+                            <input name="file-upload" type="text" placeholder="Chossen File" readonly>
+                            <!-- edit wirframe -->
+                            <input type="file" id="workshop-photo"><br>
+                        </div>
 
                     </div>
 
                     <div class="form-group">
                         <label for="staff-name"> Full Name </label>
-                        <input type="text"  name="staff-name" placeholder="Full Name">
-                    <br>
+                        <input type="text" name="staff-name" placeholder="Full Name">
+                        <br>
                     </div>
 
                     <div class="form-group">
                         <label for="birth-date">Birth Date </label>
-                        <input type="date" name="birth-date" >
-                    <br>
+                        <input type="date" name="birth-date">
+                        <br>
                     </div>
 
                     <div class="form-group">
                         <label for="staff-email">Email </label>
-                        <input type="email" name="staff-email" placeholder="Email" >
-                    <br>
+                        <input type="email" name="staff-email" placeholder="Email">
+                        <br>
                     </div>
 
                 </fieldset>
-                 </div>
+            </div>
 
 
-                <div id="professional" class="form-column">
-                <fieldset > 
+            <div id="professional" class="form-column">
+                <fieldset>
                     <legend> Professional Information </legend>
-                
+
                     <div class="form-group">
                         <label for="area-of-expertize">Area of Expertize</label>
                         <textarea name="area-of-expertize" placeholder="Area of Expertize"></textarea>
-                    <br>
+                        <br>
                     </div>
 
                     <div class="form-group">
                         <label for="skills">Skills</label>
                         <textarea name="skills" placeholder="Skills"></textarea>
-                    <br>
+                        <br>
                     </div>
 
                     <div class="form-group">
                         <label for="education">Education</label>
                         <textarea name="education" placeholder="Education"></textarea>
-                    <br>
-                    </div> 
+                        <br>
+                    </div>
 
-                      <div class="form-group">
+                    <div class="form-group">
                         <label for="message">Message</label>
                         <textarea name="message" placeholder="Message"></textarea>
-                    <br>
-                    </div> 
+                        <br>
+                    </div>
 
                 </fieldset>
 
                 <div class="staff-submit-wrapper">
-                 <input type="submit" value="Join" > 
+                    <input type="submit" value="Join">
                 </div>
 
-                 </div>
+            </div>
 
-            </form>
- 
-           
-           
-        </main>
+        </form>
 
 
-        
-    </body>
+
+    </main>
+
+
+
+</body>
+
 </html>
