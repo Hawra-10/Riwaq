@@ -205,7 +205,7 @@ input[type="date"]:focus,
 #number-column:focus,
 textarea:focus {
     outline: none;
-    border-color: #6e7177;
+    border-color: #385691;
     box-shadow: 0 0 0 3px rgba(48, 51, 54, 0.2);
 }
 
