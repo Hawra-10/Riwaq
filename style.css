@@ -370,6 +370,7 @@ body {
 .breadcrumbs {
   font-size: 13px; /* Small text for breadcrumb links */
   margin: 6px 0 4px;
+  color:#212319;
 }
 
 .breadcrumbs a {
