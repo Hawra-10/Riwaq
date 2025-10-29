@@ -54,27 +54,27 @@ header h2{text-align: center; margin-top: 60px;}
     align-items: center;}
 
 
-/*workshops*/
+/*workshops
 .workshops {
             padding: 4rem 0;
         }
         
-       /** .workshop-grid {
+       .workshop-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 2rem;
-        }**/
+        }
         
         .workshop-card {
             background:darkgray ;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            /*transition: transform 0.3s;*/
+            /*transition: transform 0.3s;
         }
         
         .workshop-card:hover {
-            /*transform: translateY(-5px);*/
+            /*transform: translateY(-5px);
             display:grid;
         }
         
@@ -111,6 +111,7 @@ header h2{text-align: center; margin-top: 60px;}
             font-size: 1.2rem;
             margin-bottom: 1rem;
         }
+        */
 
         .container {
             display: flex;
@@ -163,3 +164,223 @@ header h2{text-align: center; margin-top: 60px;}
         footer{
             color: black; 
             background-color: #666; }
+
+
+
+
+
+            /* Aroub's*/ 
+
+
+            *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif
+    }
+
+
+    /*.topbar{max-width:1100px;margin:0 auto;padding:16px 12px;display:grid;grid-template-columns:80px 1fr 80px;align-items:center}
+    .logo{width:72px;height:72px;border:1px solid #000;display:flex;align-items:center;justify-content:center;font-size:12px}
+    .site-title{text-align:center}
+    .site-title h1{margin:0 0 6px;font-size:32px}
+    .site-title p{margin:0;font-size:13px}*/
+
+    /*nav{border-top:1px solid #000;border-bottom:1px solid #000}
+    .nav-wrap{max-width:1100px;margin:0 auto;padding:8px 12px;display:flex;gap:18px;overflow-x:auto}
+    .nav-wrap a{text-decoration:none;padding:6px 0;border-bottom:2px solid transparent}
+    .nav-wrap a:hover{border-bottom-color:#000}*/
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 12px 64px
+    }
+
+    .breadcrumbs {
+      font-size: 13px;
+      margin: 6px 0 4px
+    }
+
+    .breadcrumbs a {
+      text-decoration: none
+    }
+
+    .page-head {
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .page-head h2 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 800;
+      letter-spacing: .3px
+    }
+
+    .sort {
+      display: flex;
+      align-items: center;
+      gap: 8px
+    }
+
+    select {
+      padding: 6px 8px;
+      border: 1px solid #000;
+      background: transparent
+    }
+
+
+
+    .cards {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 26px
+    }
+
+
+    .card {
+      position: relative;
+      flex: 1 1 340px;
+      max-width: 360px;
+      min-height: 520px;
+      /*border:0.5px solid #000;*/
+      border-radius: 10px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+
+    .card .bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+
+    .card-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding: 16px 16px 88px;
+      height: 100%;
+    }
+
+    .card-header {
+      /*border-bottom:1px solid #000;*/
+      padding-bottom: 8px;
+      padding-left: 8px;
+      padding-top: 8px;
+      border-radius: 8px;
+      background: #f4f2f235;
+
+    }
+
+    .card-header h3 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.3;
+
+    }
+
+
+    .centered {
+      margin: 0;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      /*border:1px solid #000;*/
+      font-size: 18px;
+      font-weight: 600;
+      opacity: 0;
+      color: white;
+      transition: opacity 0.3s ease, background-color 0.3s ease;
+      position: absolute;
+      top: 20px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+
+    }
+
+    .card:hover .centered {
+      opacity: 1;
+      color: white;
+    }
+
+
+    .meta {
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      background: #f4f2f235;
+      border: px solid #000;
+      padding: 10px;
+    }
+
+    .price {
+      font-weight: 800;
+      display: block;
+      font-size: 14px;
+    }
+
+    .location {
+      display: block;
+      font-weight: 600;
+      font-size: 12px;
+      color: rgb(0, 0, 0)
+    }
+
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+      opacity: 0.9;
+    }
+
+
+    .card .bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+
+    .card .blurred-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .card:hover .blurred-img {
+      opacity: 1;
+    }
+
