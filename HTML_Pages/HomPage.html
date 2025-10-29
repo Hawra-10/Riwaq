@@ -10,6 +10,52 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+
+    .centered {
+      margin: 0;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      opacity: 0;
+      color: white;
+      transition: opacity 0.3s ease, background-color 0.3s ease;
+      position: absolute;
+      top:20px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+
+    }
+    .centered-workshops{
+      margin: 0;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 600;
+      opacity: 0;
+      color: white;
+      transition: opacity 0.3s ease, background-color 0.3s ease;
+      position: absolute;
+      top:240px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+
+
+    }
+    .card:hover .centered-workshops {
+      opacity: 1;
+      color: white;
+    }
         #newsletter-container {
             border-top: 1px solid black;
             border-left: 1px solid black;
@@ -101,7 +147,7 @@
                         <div class="card-header">
                             <h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3>
                         </div>
-                        <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal
+                        <p class="centered-workshops">Transform your favorite photos into warm wooden panels, adding a personal
                             touch to your home decor.</p>
                     </div>
                     <div class="meta"><span class="price">160.00 SAR</span><span class="location">Riyadh –
@@ -117,7 +163,7 @@
                         <div class="card-header">
                             <h3>Metal Engraving Art<br>Etch Your Creativity in Steel</h3>
                         </div>
-                        <p class="centered">Design and carve patterns or names onto small metal plates or jewelry
+                        <p class="centered-workshops">Design and carve patterns or names onto small metal plates or jewelry
                             pieces, turning raw metal into personalized keepsakes.</p>
                     </div>
                     <div class="meta"><span class="price">140.00 SAR</span><span class="location">Jeddah – Al
@@ -130,7 +176,7 @@
                         <div class="card-header">
                             <h3>Clay Art & Pottery<br>Shape Your Imagination</h3>
                         </div>
-                        <p class="centered">Discover the joy of creating with your hands — mold, carve, and paint your
+                        <p class="centered-workshops">Discover the joy of creating with your hands — mold, carve, and paint your
                             own
                             ceramic pieces to take home.</p>
                     </div>

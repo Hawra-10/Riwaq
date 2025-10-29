@@ -197,13 +197,13 @@ header h2{text-align: center; margin-top: 60px;}
 
 
     .meta {
-     position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
-  border-radius: 9px;
-  background: #212319a6;
-  padding: 10px;
+      position: absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 16px;
+      border-radius: 9px;
+      background: #212319a6;
+      padding: 10px;
     }
 
     .price {
