@@ -10,52 +10,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .centered {
+            margin: 0;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 0;
+            color: white;
+            transition: opacity 0.3s ease, background-color 0.3s ease;
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
 
-    .centered {
-      margin: 0;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      font-size: 18px;
-      font-weight: 600;
-      opacity: 0;
-      color: white;
-      transition: opacity 0.3s ease, background-color 0.3s ease;
-      position: absolute;
-      top:20px;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
+        }
 
-    }
-    .centered-workshops{
-      margin: 0;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      font-size: 18px;
-      font-weight: 600;
-      opacity: 0;
-      color: white;
-      transition: opacity 0.3s ease, background-color 0.3s ease;
-      position: absolute;
-      top:240px;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
+        .centered-workshops {
+            margin: 0;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 0;
+            color: white;
+            transition: opacity 0.3s ease, background-color 0.3s ease;
+            position: absolute;
+            top: 240px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
 
 
-    }
-    .card:hover .centered-workshops {
-      opacity: 1;
-      color: white;
-    }
+        }
+
+        .card:hover .centered-workshops {
+            opacity: 1;
+            color: white;
+        }
+
         #newsletter-container {
             border-top: 1px solid black;
             border-left: 1px solid black;
@@ -147,7 +149,8 @@
                         <div class="card-header">
                             <h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3>
                         </div>
-                        <p class="centered-workshops">Transform your favorite photos into warm wooden panels, adding a personal
+                        <p class="centered-workshops">Transform your favorite photos into warm wooden panels, adding a
+                            personal
                             touch to your home decor.</p>
                     </div>
                     <div class="meta"><span class="price">160.00 SAR</span><span class="location">Riyadh –
@@ -163,20 +166,22 @@
                         <div class="card-header">
                             <h3>Metal Engraving Art<br>Etch Your Creativity in Steel</h3>
                         </div>
-                        <p class="centered-workshops">Design and carve patterns or names onto small metal plates or jewelry
+                        <p class="centered-workshops">Design and carve patterns or names onto small metal plates or
+                            jewelry
                             pieces, turning raw metal into personalized keepsakes.</p>
                     </div>
                     <div class="meta"><span class="price">140.00 SAR</span><span class="location">Jeddah – Al
                             Rawdah</span></div>
                 </article>
-                <article class="card" >
+                <article class="card">
                     <img class="bg" src="../images/pottery.jpeg" alt="">
                     <img class="blurred-img" src="../images/blurPottery.JPEG" alt="">
                     <div class="card-inner">
                         <div class="card-header">
                             <h3>Clay Art & Pottery<br>Shape Your Imagination</h3>
                         </div>
-                        <p class="centered-workshops">Discover the joy of creating with your hands — mold, carve, and paint your
+                        <p class="centered-workshops">Discover the joy of creating with your hands — mold, carve, and
+                            paint your
                             own
                             ceramic pieces to take home.</p>
                     </div>
@@ -270,45 +275,79 @@
             <div id="Reviews">
 
                 <!-- Review 1 -->
-                <div style="flex:1;">
-                    <p><i class="fa-solid fa-user"></i> 5/5</p>
-                    <h3>Gharsah Al-Musaeed</h3>
-                    <h4>Wooden Surface Photography:</h4>
+                <div class="review"  style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                     <div>
+                        <i class="fa-solid fa-user" style="display: inline;"></i>
+                        <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4 stars">&#9733;</label>
+
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3 stars">&#9733;</label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2 stars">&#9733;</label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1 star">&#9733;</label>
+                        </fieldset>
+                    </div>
+                    <h3 tyle="margin: 0px; padding: 22px 0px 10px;">Gharsah Al-Musaeed</h3>
+                    <h4 style="margin: 0px;">Wooden Surface Photography:</h4>
                     <p>I loved the organization.</p>
                 </div>
 
                 <!-- Review 2 -->
-                <div style="flex:1;">
-                    <p class="rate-row"><i class="fa-solid fa-user"></i>
+                <div class="review" style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                    <div>
+                        <i class="fa-solid fa-user" style="display: inline;"></i>
+                        <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4 stars">&#9733;</label>
 
-                    <fieldset class="rating-stars">
-                        <input type="radio" id="star5" name="rating" value="5" checked />
-                        <label for="star5" title="5 stars">&#9733;</label>
-                        <input type="radio" id="star4" name="rating" value="4" />
-                        <label for="star4" title="4 stars">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3 stars">&#9733;</label>
 
-                        <input type="radio" id="star3" name="rating" value="3" />
-                        <label for="star3" title="3 stars">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2 stars">&#9733;</label>
 
-                        <input type="radio" id="star2" name="rating" value="2" />
-                        <label for="star2" title="2 stars">&#9733;</label>
-
-                        <input type="radio" id="star1" name="rating" value="1" />
-                        <label for="star1" title="1 star">&#9733;</label>
-                    </fieldset>
-                    </p>
-                    <h3>Salma Al-Savour</h3>
-                    <h4>Embroidery & Fabric Art:</h4>
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1 star">&#9733;</label>
+                        </fieldset>
+                    </div>
+                    <h3 style="margin: 0px; padding: 22px 0px 10px;">Salma Al-Savour</h3>
+                    <h4 style="margin: 0px;">Embroidery & Fabric Art:</h4>
                     <p>As a visual artist, I'm always looking for<br> workshops that push me to new heights. The<br>
                         Artistic Semantics Promotion workshop was<br> a beautiful challenge that combines<br> techniques
                         and concept.</p>
                 </div>
 
                 <!-- Review 3 -->
-                <div style="flex:1;">
-                    <p><i class="fa-solid fa-user"></i> 5/5</p>
-                    <h3>Dana Al-Ruwaished</h3>
-                    <h4>Clay Art & Pottery:</h4>
+                <div class="review"  style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                     <div>
+                        <i class="fa-solid fa-user" style="display: inline;"></i>
+                        <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4 stars">&#9733;</label>
+
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3 stars">&#9733;</label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2 stars">&#9733;</label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1 star">&#9733;</label>
+                        </fieldset>
+                    </div>
+                    <h3 style="margin: 0px; padding: 22px 0px 10px;">Dana Al-Ruwaished</h3>
+                    <h4 style="margin: 0px;">Clay Art & Pottery:</h4>
                     <p>The first time I had an Arabic calligraphy pen<br> was in a modern Arabic calligraphy<br>
                         workshop. The instructor was very patient<br> and explained to us from scratch.</p>
                 </div>
