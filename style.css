@@ -402,7 +402,7 @@ body {
 
 #sort{
   padding: 6px 8px;
-  border: 1px solid #000;
+  border: 1px solid #212319;
   background: transparent; /* Matches minimal page style */
 }
 
@@ -462,6 +462,7 @@ body {
   margin: 0;
   font-size: 18px;
   line-height: 1.3;
+  color:#212319;
 }
 
 /* === Description Text (Appears on Hover) === */
@@ -505,13 +506,14 @@ body {
   font-weight: 800;
   display: block;
   font-size: 14px;
+  color:#212319;
 }
 
 .location {
   display: block;
   font-weight: 600; 
   font-size: 12px;
-  color: rgb(0, 0, 0);
+  color:#212319;
 }
 
 /* === Hover Effect on Entire Card === */
