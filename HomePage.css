@@ -50,7 +50,7 @@ header h2{text-align: center; margin-top: 60px;}
     display: flex; 
     flex-direction:row; 
     flex-wrap: nowrap ; 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;}
 
 
