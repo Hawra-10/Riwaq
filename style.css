@@ -30,12 +30,12 @@ header h2{text-align: center; margin-top: 60px;}
     flex-wrap: nowrap ;
     justify-content: space-around ;
     align-items: center; 
-    background-color: black; 
+    background-color:#2d260c;
     height: 40px;
     margin-bottom: 10px;}
 
 #navigation a {
-    color: white; 
+    color: rgb(252, 250, 250); 
     font-weight: bold; 
     text-decoration: none;} 
 
@@ -56,7 +56,7 @@ header h2{text-align: center; margin-top: 60px;}
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color:#f4efdb;
+    background-color:#fcf9ee;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -64,6 +64,11 @@ body {
     padding: 1rem;
     box-sizing: border-box;
 }
+
+header{
+  background-color:#f2e8ce;
+}
+
 
 /*h1 {    حلو ممكن نستخدمه
     font-size: 1.875rem;
