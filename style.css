@@ -497,7 +497,7 @@ body {
   padding: 10px;
 }
 
-.price {
+.pprice {
   font-weight: 800;
   display: block;
   font-size: 14px;
@@ -505,7 +505,7 @@ body {
 
 .location {
   display: block;
-  font-weight: 600;
+  font-weight: 600; 
   font-size: 12px;
   color: rgb(0, 0, 0);
 }
