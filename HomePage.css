@@ -47,64 +47,7 @@ header h2{text-align: center; margin-top: 60px;}
      
 }
 
-/*workshops
-.workshops {
-            padding: 4rem 0;
-        }
-        
-       .workshop-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        
-        .workshop-card {
-            background:darkgray ;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            /*transition: transform 0.3s;
-        }
-        
-        .workshop-card:hover {
-            /*transform: translateY(-5px);
-            display:grid;
-        }
-        
-        .workshop-card:hover .workshop-content {
-            opacity: 1;
-            
-        }
-        
-        .workshop-img {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .workshop-content {
-            padding: 1.5rem;
-            opacity: 0;
-        }
-        
-        
-        .workshop-content h3 {
-            margin-bottom: 0.5rem;
-            
-        }
-        
-        .workshop-content p {
-            margin-bottom: 1rem;
-            color: #666;
-            font-size: 0.9rem;
-        }
-        
-        .price {
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        */
+
 
         .container {
             display: flex;
@@ -130,33 +73,7 @@ header h2{text-align: center; margin-top: 60px;}
             overflow: auto;}
 
 
-        #newsletter-container{
-            border-top:1px solid black;
-            border-left:1px solid black;
-            border-right:1px solid black;
-            height: 200px; display: flex; 
-            justify-content: space-between; }
         
-
-        #about { 
-            margin-right:20px;
-            align-self:center;
-            text-align: center;}
-
-        .contact{
-            border-radius: 4px;
-            padding: 2px;
-            width: 25px;
-            margin-bottom: 10px;
-            align-self: flex-end;
-            text-align: center;
-            background-color:aliceblue;}
-
-        .contact a{text-decoration: none;}
-
-        footer{
-            color: black; 
-            background-color: #666; }
 
 
 

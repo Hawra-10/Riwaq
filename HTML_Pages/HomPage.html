@@ -9,6 +9,44 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #newsletter-container {
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        #about {
+            margin-right: 20px;
+            align-self: center;
+            text-align: center;
+        }
+
+
+
+        footer {
+            color: black;
+            background-color: #666;
+        }
+
+        .contact {
+            border-radius: 4px;
+            padding: 2px;
+            width: 25px;
+            margin-bottom: 10px;
+            align-self: flex-end;
+            text-align: center;
+            background-color: aliceblue;
+        }
+
+        .contact a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -54,7 +92,7 @@
         <section id="common">
             <h2>Common Workshops</h2>
 
-            <div id="common-workshops">
+            <div id="common-workshops" style="justify-content: space-around;">
                 <article class="card">
                     <img class="bg" src="../images/wooden2.jpeg" alt="">
                     <img class="blurred-img" src="../images/blurWood.JPEG" alt="">
@@ -85,6 +123,22 @@
                     <div class="meta"><span class="price">140.00 SAR</span><span class="location">Jeddah – Al
                             Rawdah</span></div>
                 </article>
+                <article class="card" >
+                    <img class="bg" src="../images/pottery.jpeg" alt="">
+                    <img class="blurred-img" src="../images/blurPottery.JPEG" alt="">
+                    <div class="card-inner">
+                        <div class="card-header">
+                            <h3>Clay Art & Pottery<br>Shape Your Imagination</h3>
+                        </div>
+                        <p class="centered">Discover the joy of creating with your hands — mold, carve, and paint your
+                            own
+                            ceramic pieces to take home.</p>
+                    </div>
+                    <div class="meta"><span class="price">170.00 SAR</span><span class="location">Riyadh – Al
+                            Yasmin</span>
+                    </div>
+                </article>
+
             </div>
         </section>
 
@@ -95,7 +149,7 @@
         <h2>Workshops</h2>
         <section class="cards" aria-label="Workshop cards">
 
-            
+
             <!-- 1 -->
             <article class="card" style="margin-left: 154px;">
                 <img class="bg" src="../images/wooden2.jpeg" alt="">
@@ -179,23 +233,23 @@
 
                 <!-- Review 2 -->
                 <div style="flex:1;">
-                    <p class="rate-row"><i class="fa-solid fa-user"></i>  
-                        
-                        <fieldset class="rating-stars">
-                        <input type="radio" id="star5" name="rating" value="5" checked  />
+                    <p class="rate-row"><i class="fa-solid fa-user"></i>
+
+                    <fieldset class="rating-stars">
+                        <input type="radio" id="star5" name="rating" value="5" checked />
                         <label for="star5" title="5 stars">&#9733;</label>
                         <input type="radio" id="star4" name="rating" value="4" />
                         <label for="star4" title="4 stars">&#9733;</label>
-                        
+
                         <input type="radio" id="star3" name="rating" value="3" />
                         <label for="star3" title="3 stars">&#9733;</label>
-                        
+
                         <input type="radio" id="star2" name="rating" value="2" />
                         <label for="star2" title="2 stars">&#9733;</label>
-                        
+
                         <input type="radio" id="star1" name="rating" value="1" />
                         <label for="star1" title="1 star">&#9733;</label>
-                        </fieldset>
+                    </fieldset>
                     </p>
                     <h3>Salma Al-Savour</h3>
                     <h4>Embroidery & Fabric Art:</h4>
