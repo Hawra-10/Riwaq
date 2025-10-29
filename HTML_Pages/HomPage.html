@@ -82,14 +82,26 @@
             border-right: 1px solid black;
             height: 200px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            position: relative;
+        }
+        #newsletter{
+            align-self: center;
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            
+
+
         }
 
-
         #about {
-            margin-right: 20px;
             align-self: center;
             text-align: center;
+            position: absolute;
+            top: 20px;
+            right: 10px;;
+
         }
 
 
@@ -103,7 +115,7 @@
             margin-top: 0px;
             margin-left: 0px;
             margin-right: 0px;
-            width: 15px;
+            /*width: 15px;*/
             margin-bottom: 10px;
             align-self: flex-end;
             text-align: center;
@@ -181,7 +193,7 @@
                             personal
                             touch to your home decor.</p>
                     </div>
-                    <div class="meta"><span class="price">160.00 SAR</span><span class="location">Riyadh –
+                    <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Riyadh –
                             Almalqa</span></div>
                 </article>
 
@@ -198,7 +210,7 @@
                             jewelry
                             pieces, turning raw metal into personalized keepsakes.</p>
                     </div>
-                    <div class="meta"><span class="price">140.00 SAR</span><span class="location">Jeddah – Al
+                    <div class="meta"><span class="pprice">140.00 SAR</span><span class="location">Jeddah – Al
                             Rawdah</span></div>
                 </article>
                 <article class="card">
@@ -213,7 +225,7 @@
                             own
                             ceramic pieces to take home.</p>
                     </div>
-                    <div class="meta"><span class="price">170.00 SAR</span><span class="location">Riyadh – Al
+                    <div class="meta"><span class="pprice">170.00 SAR</span><span class="location">Riyadh – Al
                             Yasmin</span>
                     </div>
                 </article>
@@ -241,7 +253,7 @@
                     <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch
                         to your home decor.</p>
                 </div>
-                <div class="meta"><span class="price">160.00 SAR</span><span class="location">Riyadh – Almalqa</span>
+                <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Riyadh – Almalqa</span>
                 </div>
             </article>
 
@@ -257,7 +269,7 @@
                     <p class="centered">Design and carve patterns or names onto small metal plates or jewelry pieces,
                         turning raw metal into personalized keepsakes.</p>
                 </div>
-                <div class="meta"><span class="price">140.00 SAR</span><span class="location">Jeddah – Al Rawdah</span>
+                <div class="meta"><span class="pprice">140.00 SAR</span><span class="location">Jeddah – Al Rawdah</span>
                 </div>
             </article>
 
@@ -272,7 +284,7 @@
                     <p class="centered">Discover the joy of creating with your hands — mold, carve, and paint your own
                         ceramic pieces to take home.</p>
                 </div>
-                <div class="meta"><span class="price">170.00 SAR</span><span class="location">Riyadh – Al Yasmin</span>
+                <div class="meta"><span class="pprice">170.00 SAR</span><span class="location">Riyadh – Al Yasmin</span>
                 </div>
             </article>
 
@@ -287,7 +299,7 @@
                     <p class="centered">Bring color to cloth by learning creative stitching patterns and designs for
                         clothes, hoops, and home decor.</p>
                 </div>
-                <div class="meta"><span class="price">160.00 SAR</span><span class="location">Jeddah – Al Salamah</span>
+                <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Jeddah – Al Salamah</span>
                 </div>
             </article>
 
@@ -392,7 +404,7 @@
 
         <!-- Newsletter Section -->
         <div id="newsletter-about">
-            <section id="newsletter" style="margin-left:20px; align-self:center;">
+            <section id="newsletter">
                 <h2>Subscribe to our weekly newsletter</h2>
                 <form>
                     <!--<label for="email">Enter your email</label>-->
@@ -407,20 +419,20 @@
                 style="background-image: url(../images/X-Logo.png); background-size:contain; background-repeat: no-repeat; height: 30px; width:30px;">
                 <a href=""></a></div>
             <div class="contact"
-                style="background-image: url(../images/insta.png); background-size:contain; background-repeat: no-repeat; height: 30px; width:30px;">
+                style="background-image: url(../images/insta.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px;">
                 <a href=""></a></div>
             <div class="contact"
                 style="background-image: url(../images/facebook.png); background-size:contain; background-repeat: no-repeat; height: 30px; width:30px;">
                 <a href=""></a></div>
             <div class="contact"
-                style="background-image: url(../images/X-Logo.png); background-size:contain; background-repeat: no-repeat; height: 30px; width:30px;">
+                style="background-image: url(../images/Yotube.png); background-size:contain; background-repeat: no-repeat; height: 30px; width:30px;">
                 <a href=""></a></div>
 
 
 
             <!-- About Section -->
             <div id="about">
-                <h2>About Riwaq</h2>
+                <h2 style="text-align: center;" >About Riwaq</h2>
                 <p>Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
                     We strive to provide a creative and<br> safe environment for developing artistic skills and
                     encouraging and<br>nurturing talent.</p>
