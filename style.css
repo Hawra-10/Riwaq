@@ -84,6 +84,149 @@ header{
     color: #1f2937;
     margin-bottom: 2.5rem;
 }*/
+/* =================================
+          Home Page 
+================================= */
+
+ #VM {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#ced3af;
+            
+        }
+        #v , #m{
+            margin: 8px;
+            padding-bottom: 10px ;
+            height: 280px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            flex:1; 
+            text-align: center ;
+        }
+        /*Common Workshops*/
+
+          #common-workshops{
+            display: flex; 
+            flex-direction:row; 
+            flex-wrap: nowrap ; 
+            justify-content: center;
+            align-items: center;
+          
+}
+
+          .centered-workshops {
+            margin: 0;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            opacity: 0;
+            color: white;
+            transition: opacity 0.3s ease, background-color 0.3s ease;
+            position: absolute;
+            top: 240px;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+
+
+        }
+
+        .card:hover .centered-workshops {
+            opacity: 1;
+            color: white;
+        }
+
+
+        /*Workshops*/
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Review*/
+
+         #Reviews{
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap ;
+            justify-content: space-around ;
+            align-items: center;}
+
+        #Reviews .review {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 20px ;
+            height: 300px;
+            overflow: auto;}
+
+
+
+        /*Footer*/
+
+        
+        footer {
+            color: black;
+            background-color: #666;
+        }
+
+         #newsletter-about {
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        #newsletter{
+            align-self: center;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            
+
+
+        }
+
+        #about {
+            align-self: center;
+            text-align: center;
+            position: absolute;
+            top: 10px;
+            right: 10px;;
+
+        }
+
+        .contact {
+            margin-top: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            align-self: flex-end;
+            text-align: center;
+        }
+
+        .contact a {
+            text-decoration: none;
+        }
+
+
+
+
+
+
 
 
 /* =================================
