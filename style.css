@@ -66,6 +66,9 @@ body {
     padding: 1rem;
     box-sizing: border-box;
 }
+h2{
+  color:#212319;
+}
 
 header{
 
@@ -377,9 +380,6 @@ body {
 }
 
 
-p.breadcrumbs {
-  color:#212319;
-}
 
 .breadcrumbs a {
   text-decoration: none; /* Remove underline from breadcrumb links */
