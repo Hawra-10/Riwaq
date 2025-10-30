@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../style.css">
- 
+
   <style>
     /* 
     *::before,
@@ -210,28 +210,26 @@
     .card:hover .blurred-img {
       opacity: 1;
     }*/
-
-
   </style>
 </head>
 
 <body>
-   <!-- Header Section -->
-    <header>
-      
-        <img src="/images/Logo.png" alt="Riwaq logo" width="200" height="200" style="display: inline;">
-        <h1 style=" display: inline;">Riwaq</h1>
-        <p>A meeting place of emotions and arts that touch the heart</p>
-       
+  <!-- Header Section -->
+  <header>
 
-        <h2>Vision</h2>
-        <p>To be the leading Arab platform that empowers new insights to discover and<br> develop their artistic talent,
-            and to enrich the cultural scene by making art and<br> creative education available to all in an inspiring
-            and stimulating environment.</p>
+    <img src="/images/Logo.png" alt="Riwaq logo" width="200" height="200" style="display: inline;">
+    <h1 style=" display: inline;">Riwaq</h1>
+    <p>A meeting place of emotions and arts that touch the heart</p>
 
 
-        <!-- Vision and Mission Section -->
-        <!--<div id="VM">
+    <h2>Vision</h2>
+    <p>To be the leading Arab platform that empowers new insights to discover and<br> develop their artistic talent,
+      and to enrich the cultural scene by making art and<br> creative education available to all in an inspiring
+      and stimulating environment.</p>
+
+
+    <!-- Vision and Mission Section -->
+    <!--<div id="VM">
             <div style="flex:1; text-align: center ;"> 
                 <h2>Vision</h2>
                 <p>To be the leading Arab platform that <br>empowers new insights to discover and<br> develop their artistic talent, and to enrich<br> the cultural scene by making art and<br> creative education available to all in an<br> inspiring and stimulating environment.</p>
@@ -242,16 +240,16 @@
             </div>    
         </div>-->
 
-        <!-- Navigation Menu -->
-        <div id="navigation">
-            <div><a href="HomPage.html">Home Page</a></div>
-            <div><a href="Workshops.html">Workshops</a></div>
-            <div><a href="#newsletter">Our Newsletter</a></div>
-            <div><a href="Provider's_Dashboard.html">Provider's Dashboard</a> </div>
-            <div><a href="About_us.html">About Us</a></div>
-            <div><a href="Customers_Dashboard.html">Customer's Dashboard</a></div>
-        </div> 
-    </header>
+    <!-- Navigation Menu -->
+    <div id="navigation">
+      <div><a href="HomPage.html">Home Page</a></div>
+      <div><a href="Workshops.html">Workshops</a></div>
+      <div><a href="#newsletter">Our Newsletter</a></div>
+      <div><a href="Provider's_Dashboard.html">Provider's Dashboard</a> </div>
+      <div><a href="About_us.html">About Us</a></div>
+      <div><a href="Customers_Dashboard.html">Customer's Dashboard</a></div>
+    </div>
+  </header>
 
   <main id="Aroubـmain">
     <p class="breadcrumbs"><a href="HomPage.html">Home</a> &gt; <span>Workshops</span></p>
@@ -261,17 +259,20 @@
       <form class="sort" action="#" method="get">
         <label for="sort"></label>
         <select id="sort" name="sort">
-          <option selected>Sort</option>
-          <optgroup label="By price">
-          <option value="price-high">Price: High to Low</option>
-          <option value="price-low">Price: Low to High</option>
+          <option value="" disabled selected>Sort</option> 
+
+          <optgroup label="By Price">
+            <option value="price-high">Price: High to Low</option>
+            <option value="price-low">Price: Low to High</option>
           </optgroup>
-          <optgroup label="By price">
-          <option value="price-high">Price: High to Low</option>
-          <option value="price-low">Price: Low to High</option>
+
+          <optgroup label="By Name">
+            <option value="name-a-z">Name: A → Z</option>
+            <option value="name-z-a">Name: Z → A</option>
           </optgroup>
         </select>
       </form>
+
     </div>
 
     <section class="cards" aria-label="Workshop cards">
@@ -345,7 +346,8 @@
           <p class="centered">Mix soothing fragrances and colors to craft personalized candles perfect for gifts or cozy
             nights in.</p>
         </div>
-        <div class="meta"><span class="pprice">200.00 SAR</span><span class="location">Dammam – Al Faisaliah</span></div>
+        <div class="meta"><span class="pprice">200.00 SAR</span><span class="location">Dammam – Al Faisaliah</span>
+        </div>
       </article>
 
       <!-- 6 -->

@@ -376,6 +376,11 @@ body {
   color:#212319;
 }
 
+
+p.breadcrumbs {
+  color:#212319;
+}
+
 .breadcrumbs a {
   text-decoration: none; /* Remove underline from breadcrumb links */
 }
@@ -402,6 +407,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  color:#212319;
 }
 
 #sort{
