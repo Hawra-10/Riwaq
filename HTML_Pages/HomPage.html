@@ -3,65 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!---->
     <title>Riwaq -Home page</title>
+    <link rel="stylesheet" href="../HomePage.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .rate-row {
-            display: flex;
-            justify-content: flex-start;
-            /* left text, right stars */
-            align-items: flex-start;
-            /*width: 100%;*/
-            margin: 0;
-        }
+         .rate-row {
+      display: flex;
+      justify-content:flex-start; /* left text, right stars */
+      align-items: flex-start;
+      /*width: 100%;*/
+      margin: 0;
+    }
 
 
-        .rate-label {
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 2.5;
-        }
-
-        .rating-stars {
-            display: flex;
-            /* This makes the stars appear in the correct order (1-5) even though
+    .rate-label {
+      font-weight: bold;
+      font-size: 16px;
+      line-height:2.5;
+    }
+    
+    .rating-stars {
+        display: flex;
+        /* This makes the stars appear in the correct order (1-5) even though
             the HTML is reversed (5-1). This is the key to the CSS trick. */
-            flex-direction: row-reverse;
-            justify-content: flex-start;
-            /* Aligns stars to the right */
-            border: 0;
-            padding: 0;
-            margin: 0;
-        }
+        flex-direction: row-reverse;
+        justify-content: flex-start; /* Aligns stars to the right */
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
 
-        /* Hide the actual radio buttons */
-        .rating-stars input[type="radio"] {
-            display: none;
-        }
+    /* Hide the actual radio buttons */
+    .rating-stars input[type="radio"] {
+        display: none;
+    }
 
-        /* Style the star labels */
-        .rating-stars label {
-            font-size: 1.8rem;
-            /* 36px */
-            line-height: 2.5rem;
-            /* 40px */
-            color: #f59e0b;
-            /* Tailwind's gray-400 */
-
-        }
+    /* Style the star labels */
+    .rating-stars label {
+        font-size: 1.8rem; /* 36px */
+        line-height: 2.5rem; /* 40px */
+        color: #f59e0b; /* Tailwind's gray-400 */
+      
+    }
+       
     </style>
 </head>
 
 <body>
     <!-- Header Section -->
     <header>
-        <img src="../images/صورة واتساب بتاريخ 1447-04-30 في 23.15.26_79444646.png" width="200" height="200" alt="Riwaq logo">
+        <img src="../images/Logo.png" width="200" height="200" alt="Riwaq logo">
         <h1 style=" position: absolute; top:50px; left: 570px;">Riwaq</h1>
         <p style=" position: absolute; top:110px; left: 440px;">A meeting place of emotions and arts that touch the
             heart</p>
+
+
+
+            <!--<h2>Vision</h2>
+            <p>To be the leading Arab platform that empowers new insights to discover and<br> develop their artistic
+                talent,
+                and to enrich the cultural scene by making art and<br> creative education available to all in an
+                inspiring
+                and stimulating environment.</p>-->
 
         <!-- Vision and Mission Section -->
         <div id="VM">
@@ -71,7 +77,7 @@
                     artistic talent, and to enrich the cultural scene by making art and creative education
                     available to all in an inspiring and stimulating environment.</p>
             </div>
-            <div id="m">
+            <div id="m" >
                 <h2>Mission</h2>
                 <p>Our mission is to build a vibrant Arab art community by providing high-quality inclusive art
                     workshops covering a wide range of disciplines for all ages and levels, creating a safe and
@@ -98,7 +104,7 @@
         <section id="common">
             <h2>Common Workshops</h2>
 
-            <div id="common-workshops" style="justify-content: space-around;">
+            <div id="common-workshops" aria-label="Workshop cards" style="justify-content: space-around;">
                 <article class="card">
                     <img class="bg" src="../images/wooden2.jpeg" alt="">
                     <img class="blurred-img" src="../images/blurWood.JPEG" alt="">
@@ -107,9 +113,9 @@
                         <div class="card-header">
                             <h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3>
                         </div>
-                        <div class="centered-workshops">Transform your favorite photos into warm wooden panels, adding a
+                        <p class="centered-workshops">Transform your favorite photos into warm wooden panels, adding a
                             personal
-                            touch to your home decor.</div>
+                            touch to your home decor.</p>
                     </div>
                     <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Riyadh –
                             Almalqa</span></div>
@@ -124,9 +130,9 @@
                         <div class="card-header">
                             <h3>Metal Engraving Art<br>Etch Your Creativity in Steel</h3>
                         </div>
-                        <div class="centered-workshops">Design and carve patterns or names onto small metal plates or
+                        <p class="centered-workshops">Design and carve patterns or names onto small metal plates or
                             jewelry
-                            pieces, turning raw metal into personalized keepsakes.</div>
+                            pieces, turning raw metal into personalized keepsakes.</p>
                     </div>
                     <div class="meta"><span class="pprice">140.00 SAR</span><span class="location">Jeddah – Al
                             Rawdah</span></div>
@@ -138,10 +144,10 @@
                         <div class="card-header">
                             <h3>Clay Art & Pottery<br>Shape Your Imagination</h3>
                         </div>
-                        <div class="centered-workshops">Discover the joy of creating with your hands — mold, carve, and
+                        <p class="centered-workshops">Discover the joy of creating with your hands — mold, carve, and
                             paint your
                             own
-                            ceramic pieces to take home.</div>
+                            ceramic pieces to take home.</p>
                     </div>
                     <div class="meta"><span class="pprice">170.00 SAR</span><span class="location">Riyadh – Al
                             Yasmin</span>
@@ -168,8 +174,8 @@
                     <div class="card-header">
                         <h3>Wooden Surface Photography<br>Bring Your Memories to Life</h3>
                     </div>
-                    <div class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch
-                        to your home decor.</div>
+                    <p class="centered">Transform your favorite photos into warm wooden panels, adding a personal touch
+                        to your home decor.</p>
                 </div>
                 <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Riyadh – Almalqa</span>
                 </div>
@@ -184,13 +190,13 @@
                     <div class="card-header">
                         <h3>Metal Engraving Art<br>Etch Your Creativity in Steel</h3>
                     </div>
-                    <div class="centered">Design and carve patterns or names onto small metal plates or jewelry pieces,
-                        turning raw metal into personalized keepsakes.</div>
+                    <p class="centered">Design and carve patterns or names onto small metal plates or jewelry pieces,
+                        turning raw metal into personalized keepsakes.</p>
                 </div>
                 <div class="meta"><span class="pprice">140.00 SAR</span><span class="location">Jeddah – Al Rawdah</span>
                 </div>
             </article>
-        
+
             <!-- 3 -->
             <article class="card" style="margin-left: 210px;">
                 <img class="bg" src="../images/pottery.jpeg" alt="">
@@ -199,8 +205,8 @@
                     <div class="card-header">
                         <h3>Clay Art & Pottery<br>Shape Your Imagination</h3>
                     </div>
-                    <div class="centered">Discover the joy of creating with your hands — mold, carve, and paint your own
-                        ceramic pieces to take home.</div>
+                    <p class="centered">Discover the joy of creating with your hands — mold, carve, and paint your own
+                        ceramic pieces to take home.</p>
                 </div>
                 <div class="meta"><span class="pprice">170.00 SAR</span><span class="location">Riyadh – Al Yasmin</span>
                 </div>
@@ -214,11 +220,10 @@
                     <div class="card-header">
                         <h3>Embroidery & Fabric Art<br>Threads That Tell Stories</h3>
                     </div>
-                    <div class="centered">Bring color to cloth by learning creative stitching patterns and designs for
-                        clothes, hoops, and home decor.</div>
+                    <p class="centered">Bring color to cloth by learning creative stitching patterns and designs for
+                        clothes, hoops, and home decor.</p>
                 </div>
-                <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Jeddah – Al
-                        Salamah</span>
+                <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Jeddah – Al Salamah</span>
                 </div>
             </article>
 
@@ -234,34 +239,50 @@
             <div id="Reviews">
 
                 <!-- Review 1 -->
-                <div class="review" style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                <div class="review"
+                    style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-user" style="display: inline;"></i>
                         <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4 stars">&#9733;</label>
 
-                           <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating" value="5"></label>
-                            <label title="4 stars">&#9733;<input type="radio" class="star4" name="rating" value="4"></label>
-                            <label title="3 stars">&#9733;<input type="radio" class="star3" name="rating" value="3"></label>
-                            <label title="2 stars">&#9733;<input type="radio" class="star2" name="rating" value="2"></label>
-                            <label title="1 star">&#9733;<input type="radio" class="star1" name="rating" value="1"></label>
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3 stars">&#9733;</label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2 stars">&#9733;</label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1 star">&#9733;</label>
                         </fieldset>
                     </div>
-                    <h3 style="margin: 0px; padding: 22px 0px 10px;">Gharsah Al-Musaeed</h3>
+                    <h3 tyle="margin: 0px; padding: 22px 0px 10px;">Gharsah Al-Musaeed</h3>
                     <h4 style="margin: 0px;">Wooden Surface Photography:</h4>
                     <p>I loved the organization.</p>
                 </div>
 
                 <!-- Review 2 -->
-                <div class="review" style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                <div class="review"
+                    style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-user" style="display: inline;"></i>
                         <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
-                           
-                           <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating" value="5"></label>
-                            <label title="4 stars">&#9733;<input type="radio" class="star4" name="rating" value="4"></label>
-                            <label title="3 stars">&#9733;<input type="radio" class="star3" name="rating" value="3"></label>
-                            <label title="2 stars">&#9733;<input type="radio" class="star2" name="rating" value="2"></label>
-                            <label title="1 star">&#9733;<input type="radio" class="star1" name="rating" value="1"></label>
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4 stars">&#9733;</label>
+
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3 stars">&#9733;</label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2 stars">&#9733;</label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1 star">&#9733;</label>
                         </fieldset>
                     </div>
                     <h3 style="margin: 0px; padding: 22px 0px 10px;">Salma Al-Savour</h3>
@@ -272,16 +293,24 @@
                 </div>
 
                 <!-- Review 3 -->
-                <div class="review" style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                <div class="review"
+                    style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-user" style="display: inline;"></i>
                         <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
-                             
-                           <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating" value="5"></label>
-                            <label title="4 stars">&#9733;<input type="radio" class="star4" name="rating" value="4"></label>
-                            <label title="3 stars">&#9733;<input type="radio" class="star3" name="rating" value="3"></label>
-                            <label title="2 stars">&#9733;<input type="radio" class="star2" name="rating" value="2"></label>
-                            <label title="1 star">&#9733;<input type="radio" class="star1" name="rating" value="1"></label>
+                            <input type="radio" id="star5" name="rating" value="5" />
+                            <label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4" />
+                            <label for="star4" title="4 stars">&#9733;</label>
+
+                            <input type="radio" id="star3" name="rating" value="3" />
+                            <label for="star3" title="3 stars">&#9733;</label>
+
+                            <input type="radio" id="star2" name="rating" value="2" />
+                            <label for="star2" title="2 stars">&#9733;</label>
+
+                            <input type="radio" id="star1" name="rating" value="1" />
+                            <label for="star1" title="1 star">&#9733;</label>
                         </fieldset>
                     </div>
                     <h3 style="margin: 0px; padding: 22px 0px 10px;">Dana Al-Ruwaished</h3>
@@ -294,53 +323,45 @@
     </main>
 
 
-    <!-- Footer Section -->
-    <footer>
+   <!-- Footer Section -->
+<footer>
+  <div id="footer-workshops">
 
-        <!-- Newsletter Section -->
-        <div id="newsletter-about">
-            <div id="newsletter">
-                <h2>Subscribe to our weekly newsletter</h2>
-                <form>
-                    <!--<label for="email">Enter your email</label>-->
-                    <input type="email" id="email" name="email" placeholder="Enter your email"
-                        style="width: 200px; height: 9px;">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
+    <!-- Social Media Icons -->
+    <div class="contact"
+      style="background-image: url(../images/X.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
+      <a href=""></a></div>
+    <div class="contact"
+      style="background-image: url(../images/Instagram_icon.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
+      <a href=""></a></div>
+    <div class="contact"
+      style="background-image: url(../images/facebook2.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
+      <a href=""></a></div>
+    <div class="contact"
+      style="background-image: url(../images/youtube.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
+      <a href=""></a></div>
 
-            <!--Contact Us-->
+    <!-- About Section -->
+    <div id="about-workshops">
+      <h2>About Riwaq</h2>
+      <p>Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
+        We strive to provide a creative and<br> safe environment for developing artistic skills and
+        encouraging and<br> nurturing talent.</p>
+    </div>
+  </div>
 
-            <div class="contact">
-                <a href=""><img src="../images/X.png" alt="x contact" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/Instagram_icon.png" alt="Instagram contact" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/facebook2.png" alt="facebook contact" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/youtube.png" alt="youtube contact" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
+  <!-- Bottom Bar -->
+  <div style="display:flex; justify-content: space-between; background-color: #212319;">
+    <p style="margin-left:20px; text-align: center; color: #fef8e3;">
+      Copyright © 2025 Riwaq. All rights reserved.
+    </p>
+    <p style="margin-right:20px; text-align: center;">
+      <a href="" style="text-decoration: underline; color: #fef8e3;">Terms & Conditions</a> |
+      <a href="" style="text-decoration: underline; color: #fef8e3;">Privacy Policy</a>
+    </p>
+  </div>
+</footer>
 
-
-
-            <!-- About Section -->
-            <div id="about-homepage">
-                <h2 style="text-align: center;">About Riwaq</h2>
-                <p>Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
-                    We strive to provide a creative and<br> safe environment for developing artistic skills and
-                    encouraging and<br>nurturing talent.</p>
-            </div>
-        </div>
-
-        <div style="display:flex; justify-content: space-between; background-color: aliceblue;">
-            <p style="margin-left:20px; text-align: center; ">Copyright © 2025 Riwaq. All rights reserved.</p>
-            <p style="margin-right:20px; text-align: center; "><a href="" style="text-decoration: underline;">Terms &
-                    Conditions</a> | <a href="" style="text-decoration: underline;">Privacy Policy</a></p>
-        </div>
-    </footer>
 </body>
 
 </html>
