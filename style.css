@@ -20,7 +20,10 @@ header h2{text-align: center; margin-top: 60px;}
     justify-content: space-around ;
     align-items: center;}
 
-
+#HD { display: flex; 
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center; }
 
 /*navigation*/
 
@@ -78,12 +81,6 @@ header{
 }
 
 
-/*h1 {    حلو ممكن نستخدمه
-    font-size: 1.875rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 2.5rem;
-}*/
 /* =================================
           Home Page 
 ================================= */
