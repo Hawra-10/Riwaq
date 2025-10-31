@@ -252,35 +252,41 @@ footer {
 /* =================================
          Manage Staff Members
    ================================= */
-
-/* Form Container */
-#delete-staff-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: normal;
-  clear: both;
+   #our_staff {
+    display: flex;          
+    flex-wrap: nowrap;      
+    overflow-x: auto;       
+    gap: 20px;              
+    padding: 10px 0;
 }
 
-/* Each Staff div*/
 .staff-members {
-  display: flex;
-  border: 1px solid;
-  border-radius: 0.3em;
-  margin: 2%;
-  padding: 0.2em 0.4em;
-  width: 20em;
-  height: 7em;
-  align-items: center;
-  justify-content: space-between;
+    flex: 0 0 auto;         
+    text-align: center;
+    border: 1px solid;     
+    border-radius: 0.3em;
+    padding: 0.5em 1em;
+    width: 20em;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
-.staff-members span {
-  font-size: 1.2em;
+.staff-members img {
+    border-radius: 50%;     
+    display: block;
+    margin-right: 10px;
 }
 
 .staff-members a {
-  padding-right: 2em;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.staff-members a:hover {
+    color: #000;
 }
 
 .staff-members input[type="checkbox"] {
@@ -845,9 +851,10 @@ h2 {
   padding: 10px;
   font-size: 14px;
 }
-
 .buttons {
-  text-align: center;
+  display: flex;               
+  justify-content: center;     
+  gap: 20px;                  
   margin-top: 30px;
 }
 
@@ -856,10 +863,11 @@ h2 {
   color: white;
   border: none;
   padding: 10px 20px;
-  margin: 10px;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;     
+  display: inline-block;
 }
 
 .shButton:hover {
