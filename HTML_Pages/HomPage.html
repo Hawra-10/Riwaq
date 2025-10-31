@@ -6,46 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!---->
     <title>Riwaq -Home page</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        xintegrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-         .rate-row {
-      display: flex;
-      justify-content:flex-start; /* left text, right stars */
-      align-items: flex-start;
-      /*width: 100%;*/
-      margin: 0;
-    }
+        .rate-row {
+            display: flex;
+            justify-content: flex-start;
+            /* left text, right stars */
+            align-items: flex-start;
+            /*width: 100%;*/
+            margin: 0;
+        }
 
 
-    .rate-label {
-      font-weight: bold;
-      font-size: 16px;
-      line-height:2.5;
-    }
-    
-    .rating-stars {
-        display: flex;
-        /* This makes the stars appear in the correct order (1-5) even though
+        .rate-label {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 2.5;
+        }
+
+        .rating-stars {
+            display: flex;
+            /* This makes the stars appear in the correct order (1-5) even though
             the HTML is reversed (5-1). This is the key to the CSS trick. */
-        flex-direction: row-reverse;
-        justify-content: flex-start; /* Aligns stars to the right */
-        border: 0;
-        padding: 0;
-        margin: 0;
-    }
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            /* Aligns stars to the right */
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
 
-    /* Hide the actual radio buttons */
-    .rating-stars input[type="radio"] {
-        display: none;
-    }
+        /* Hide the actual radio buttons */
+        .rating-stars input[type="radio"] {
+            display: none;
+        }
 
-    /* Style the star labels */
-    .rating-stars label {
-        font-size: 1.8rem; /* 36px */
-        line-height: 2.5rem; /* 40px */
-        color: #f59e0b; /* Tailwind's gray-400 */
-      
-    }
-       
+        /* Style the star labels */
+        .rating-stars label {
+            font-size: 1.8rem;
+            /* 36px */
+            line-height: 2.5rem;
+            /* 40px */
+            color: #f59e0b;
+            /* Tailwind's gray-400 */
+
+        }
     </style>
 </head>
 
@@ -59,7 +65,7 @@
 
 
 
-            <!--<h2>Vision</h2>
+        <!--<h2>Vision</h2>
             <p>To be the leading Arab platform that empowers new insights to discover and<br> develop their artistic
                 talent,
                 and to enrich the cultural scene by making art and<br> creative education available to all in an
@@ -74,7 +80,7 @@
                     artistic talent, and to enrich the cultural scene by making art and creative education
                     available to all in an inspiring and stimulating environment.</p>
             </div>
-            <div id="m" >
+            <div id="m">
                 <h2>Mission</h2>
                 <p>Our mission is to build a vibrant Arab art community by providing high-quality inclusive art
                     workshops covering a wide range of disciplines for all ages and levels, creating a safe and
@@ -220,7 +226,8 @@
                     <p class="centered">Bring color to cloth by learning creative stitching patterns and designs for
                         clothes, hoops, and home decor.</p>
                 </div>
-                <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Jeddah – Al Salamah</span>
+                <div class="meta"><span class="pprice">160.00 SAR</span><span class="location">Jeddah – Al
+                        Salamah</span>
                 </div>
             </article>
 
@@ -239,48 +246,41 @@
                 <div class="review"
                     style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
-                        <i class="fa-solid fa-user" style="display: inline;"></i>
+                        <i class="fa-solid fa-user"></i>
                         <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" title="5 stars">&#9733;</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" title="4 stars">&#9733;</label>
 
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" title="3 stars">&#9733;</label>
-
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" title="2 stars">&#9733;</label>
-
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" title="1 star">&#9733;</label>
+                            <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating"
+                                    value="5" /></label>
+                            <label title="4 stars">&#9733;<input type="radio" class="star4" name="rating"
+                                    value="4" /></label>
+                            <label title="3 stars">&#9733;<input type="radio" class="star3" name="rating"
+                                    value="3" /></label>
+                            <label title="2 stars">&#9733;<input type="radio" class="star2" name="rating"
+                                    value="2" /></label>
+                            <label title="1 star">&#9733;<input type="radio" class="star1" name="rating"
+                                    value="1" /></label>
                         </fieldset>
                     </div>
-                    <h3 tyle="margin: 0px; padding: 22px 0px 10px;">Gharsah Al-Musaeed</h3>
+                    <h3 style="margin: 0px; padding: 22px 0px 10px;">Gharsah Al-Musaeed</h3>
                     <h4 style="margin: 0px;">Wooden Surface Photography:</h4>
                     <p>I loved the organization.</p>
                 </div>
 
                 <!-- Review 2 -->
-                <div class="review"
-                    style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                <div class="review"style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
-                        <i class="fa-solid fa-user" style="display: inline;"></i>
+                        <i class="fa-solid fa-user"></i>
                         <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" title="5 stars">&#9733;</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" title="4 stars">&#9733;</label>
-
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" title="3 stars">&#9733;</label>
-
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" title="2 stars">&#9733;</label>
-
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" title="1 star">&#9733;</label>
-                        </fieldset>
+                            <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating"
+                                    value="5" /></label>
+                            <label title="4 stars">&#9733;<input type="radio" class="star4" name="rating"
+                                    value="4" /></label>
+                            <label title="3 stars">&#9733;<input type="radio" class="star3" name="rating"
+                                    value="3" /></label>
+                            <label title="2 stars">&#9733;<input type="radio" class="star2" name="rating"
+                                    value="2" /></label>
+                            <label title="1 star">&#9733;<input type="radio" class="star1" name="rating"
+                                    value="1" /></label>
                     </div>
                     <h3 style="margin: 0px; padding: 22px 0px 10px;">Salma Al-Savour</h3>
                     <h4 style="margin: 0px;">Embroidery & Fabric Art:</h4>
@@ -290,24 +290,20 @@
                 </div>
 
                 <!-- Review 3 -->
-                <div class="review"
-                    style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
+                <div class="review"style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
-                        <i class="fa-solid fa-user" style="display: inline;"></i>
+                        <i class="fa-solid fa-user"></i>
                         <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" title="5 stars">&#9733;</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" title="4 stars">&#9733;</label>
-
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" title="3 stars">&#9733;</label>
-
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" title="2 stars">&#9733;</label>
-
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" title="1 star">&#9733;</label>
+                            <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating"
+                                    value="5" /></label>
+                            <label title="4 stars">&#9733;<input type="radio" class="star4" name="rating"
+                                    value="4" /></label>
+                            <label title="3 stars">&#9733;<input type="radio" class="star3" name="rating"
+                                    value="3" /></label>
+                            <label title="2 stars">&#9733;<input type="radio" class="star2" name="rating"
+                                    value="2" /></label>
+                            <label title="1 star">&#9733;<input type="radio" class="star1" name="rating"
+                                    value="1" /></label>
                         </fieldset>
                     </div>
                     <h3 style="margin: 0px; padding: 22px 0px 10px;">Dana Al-Ruwaished</h3>
@@ -329,8 +325,9 @@
                 <h2>Subscribe to our weekly newsletter</h2>
                 <form>
                     <!--<label for="email">Enter your email</label>-->
-                    <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 200px; height: 9px;">
-                    <button type="submit" >Subscribe</button>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                        style="width: 200px; height: 9px;">
+                    <button type="submit">Subscribe</button>
                 </form>
             </div>
 
@@ -338,32 +335,36 @@
 
             <div class="contact"
                 style="background-image: url(../images/X.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
-                <a href=""></a></div>
+                <a href=""></a>
+            </div>
             <div class="contact"
                 style="background-image: url(../images/Instagram_icon.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
-                <a href=""></a></div>
+                <a href=""></a>
+            </div>
             <div class="contact"
                 style="background-image: url(../images/facebook2.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
-                <a href=""></a></div>
+                <a href=""></a>
+            </div>
             <div class="contact"
                 style="background-image: url(../images/youtube.png); background-size:contain; background-repeat: no-repeat; height: 25px; width:25px; margin: 10px;">
-                <a href=""></a></div>
+                <a href=""></a>
+            </div>
 
 
 
             <!-- About Section -->
             <div id="about">
-                <h2 style="text-align: center;" >About Riwaq</h2>
+                <h2 style="text-align: center;">About Riwaq</h2>
                 <p>Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
                     We strive to provide a creative and<br> safe environment for developing artistic skills and
                     encouraging and<br>nurturing talent.</p>
             </div>
         </div>
 
-        <div style="display:flex; justify-content: space-between; background-color: #212319;">
-            <p style="margin-left:20px; text-align: center; color: #fef8e3; ">Copyright © 2025 Riwaq. All rights reserved.</p>
-            <p style="margin-right:20px; text-align: center; color: #fef8e3; "><a href="" style="text-decoration: underline; color: #fef8e3;">Terms &
-                    Conditions</a> | <a href="" style="text-decoration: underline; color: #fef8e3;">Privacy Policy</a></p>
+        <div style="display:flex; justify-content: space-between; background-color: aliceblue;">
+            <p style="margin-left:20px; text-align: center; ">Copyright © 2025 Riwaq. All rights reserved.</p>
+            <p style="margin-right:20px; text-align: center; "><a href="" style="text-decoration: underline;">Terms &
+                    Conditions</a> | <a href="" style="text-decoration: underline;">Privacy Policy</a></p>
         </div>
     </footer>
 </body>
