@@ -12,13 +12,6 @@ header p{
 
 header h2{text-align: center; margin-top: 60px;}
 
-/*vision and mission*/
-#VM {
-    display: flex; 
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-around ;
-    align-items: center;}
 
 #HD { display: flex; 
     flex-direction:row;
