@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>CustomersDashboard</title>
@@ -10,7 +10,7 @@
 
 <!-- Header Section -->
     <header>
-        <img src="" alt="Riwaq logo">
+        <img src="req.png" alt="Riwaq logo">
         <h1>Riwaq</h1>
         <p>A meeting place of emotions and arts that touch the heart</p>
 
@@ -50,56 +50,87 @@
       <p><strong>Booking#:</strong> 1023</p>
       <p><strong>Total:</strong> 250.00 SAR</p>
       <p><strong>Date:</strong> 2025/03/14</p>
+	  <p><strong>Status :</strong> Completed</p>
+
     </div>
 
     <div class="booking-box">
       <p><strong>Booking#:</strong> 0975</p>
       <p><strong>Total:</strong> 180.00 SAR</p>
       <p><strong>Date:</strong> 2025/02/10</p>
+	  <p><strong>Status :</strong> Completed</p>
+
     </div>
 
     <div class="booking-box">
       <p><strong>Booking#:</strong> 0832</p>
       <p><strong>Total:</strong> 320.00 SAR</p>
       <p><strong>Date:</strong> 2025/01/25</p>
+	  <p><strong>Status :</strong> Canceled</p>
+
     </div>
 
     <div class="booking-box">
       <p><strong>Booking#:</strong> 0721</p>
       <p><strong>Total:</strong> 150.00 SAR</p>
       <p><strong>Date:</strong> 2024/12/05</p>
+	  <p><strong>Status :</strong> Completed</p>
+
     </div>
   </div>
 
   <div class="buttons">
-    <a href="Evaluation.html"><button class="shButton">Evaluation</button></a>
-    <a href="Request_a_new_workshop.html"><button class="shButton">Request a New Workshop</button></a>
+    <a href="Evaluation.html" class="shButton">Evaluation </a>
+    <a href="Request_a_new_workshop.html" class="shButton">Request a New Workshop </a>
   </div>
 </main>
 
-<footer>
-  <div class="footer-top">
-    <h3>About Riwaq</h3>
-    <p>Riwaq is an Arab platform for design and provides the best art workshops for all ages and levels. 
-    We strive to provide a creative and safe environment for developing artistic skills and encouraging and nurturing talent.</p>
+<footer>   <!-- Footer Section -->
 
-    <div class="social-icons">
-      <a href="#">f</a>
-      <a href="#">i</a>
-      <a href="#">g</a>
-      <a href="#">l</a>
-      <a href="#">y</a>
-    </div>
-  </div>
+        <!-- Newsletter Section -->
+        <div id="newsletter-about">
+            <div id="newsletter">
+                <h2>Subscribe to our weekly newsletter</h2>
+                <form>
+                    <!--<label for="email">Enter your email</label>-->
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                        style="width: 200px; height: 9px;">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
 
-  <div class="footer-bottom">
-    <p>Copyright © 2025 Riwaq. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="#">Terms & Conditions</a> |
-      <a href="#">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
+            <!--Contact Us-->
 
+            <div class="contact">
+                <a href=""><img src="../images/X.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+            </div>
+            <div class="contact">
+                <a href=""><img src="../images/Instagram_icon.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+            </div>
+            <div class="contact">
+                <a href=""><img src="../images/facebook2.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+            </div>
+            <div class="contact">
+                <a href=""><img src="../images/youtube.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+            </div>
+
+
+
+            <!-- About Section -->
+            <div id="about">
+                <h2 style="text-align: center;">About Riwaq</h2>
+                <p>Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
+                    We strive to provide a creative and<br> safe environment for developing artistic skills and
+                    encouraging and<br>nurturing talent.</p>
+            </div>
+        </div>
+
+        <div style="display:flex; justify-content: space-between; background-color: aliceblue;">
+            <p style="margin-left:20px; text-align: center; ">Copyright © 2025 Riwaq. All rights reserved.</p>
+            <p style="margin-right:20px; text-align: center; "><a href="" style="text-decoration: underline;">Terms &
+                    Conditions</a> | <a href="" style="text-decoration: underline;">Privacy Policy</a></p>
+        </div>
+    </footer>
 </body>
+
 </html>
