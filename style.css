@@ -287,6 +287,11 @@ input[form="delete-staff-form"] {float: right;
          Add a New Staff Member
    ================================= */
 
+#forms-main{display: flex;
+            flex-direction: column;
+            align-items: center;}
+
+
 /* Form Container */
 .forms {
     width: 100%;
