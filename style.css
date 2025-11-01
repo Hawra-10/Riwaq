@@ -69,8 +69,15 @@ body {
     padding: 1rem;
     box-sizing: border-box;
 }
-h2{
+
+h2{ color:#212319;}
+
+h1{
   color:#212319;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
 }
 
 header{
@@ -86,6 +93,17 @@ header{
               flex-direction: column;
             align-items: center;}     
 
+
+.breadcrumbs {
+  font-size: 13px; /* Small text for breadcrumb links */
+  margin: 6px 0 4px;
+  color:#212319;
+}
+
+.breadcrumbs a {
+  color: #212319;            
+  text-decoration: none;   
+}
           
 
 /* =================================
@@ -443,7 +461,8 @@ input[type="submit"]:hover {
     }
    #staff-table {
             width: 100%;
-            border-collapse: collapse; /* Remove space between borders */
+            border-collapse: collapse; 
+            margin-top: 2em;
         }
 
         th, td {
@@ -511,17 +530,6 @@ body {
 }
 
 /* === Breadcrumb Navigation === */
-.breadcrumbs {
-  font-size: 13px; /* Small text for breadcrumb links */
-  margin: 6px 0 4px;
-  color:#212319;
-}
-
-
-
-.breadcrumbs a {
-  text-decoration: none; /* Remove underline from breadcrumb links */
-}
 
 /* === Page Header Section (Title + Sort) === */
 .page-head {
@@ -690,10 +698,7 @@ body {
   opacity: 1;
 }
 
-.breadcrumbs a {
-  color: black;            
-  text-decoration: none;   
-}
+
 
 
 
