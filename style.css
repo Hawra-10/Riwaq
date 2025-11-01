@@ -291,7 +291,7 @@ input[form="delete-staff-form"] {float: right;
 .forms {
     width: 100%;
     max-width: 900px;
-    background-color: #ced3af; /*#e8e1ce*/
+    background-color: #f5edd9; /*#f5edd9*/
     padding: 2rem 3rem;
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
@@ -319,7 +319,7 @@ input[form="delete-staff-form"] {float: right;
 
 fieldset {
     border: none;
-    border-top: 1px solid #d1d5db;
+    border-top: 1px solid #212319;
     padding: 0;
     margin: 0;
 }
@@ -356,7 +356,7 @@ textarea {
     border-radius: 0.375rem;
     box-sizing: border-box;
     transition: border-color 0.2s, box-shadow 0.2s;
-    background-color:#ededed;
+    background-color:#f7f2e7;
 }
 
 select:focus,
@@ -397,7 +397,7 @@ input[type="date"] {
 }
 
 #file-upload-label:hover {
-    background-color: #f9fafb;
+    background-color: #f7f2e7;
 }
 
 .icon-wrapper {
