@@ -224,6 +224,8 @@ header{
 
         }
 
+        
+
         .contact {
             margin-top: 0px;
             margin-left: 0px;
@@ -298,7 +300,7 @@ input[form="delete-staff-form"] {float: right;
 /* Form Layout */
 .forms {
     display: grid;
-    grid-template-columns: 1fr; /* Default to 1 column */
+    grid-template-columns: 1fr; 
     gap: 2rem 3rem;
 }
 
@@ -437,7 +439,7 @@ input[type="file"] {
 }
 
 input[type="submit"] {
-    background-color: #111827; /* black */
+    background-color: #212319;
     color: white;
     font-weight: 700;
     padding: 0.75rem 2rem;
@@ -448,7 +450,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #374151; /* gray-700 */
+    background-color: #374151; 
 }
 
 
@@ -466,42 +468,42 @@ input[type="submit"]:hover {
         }
 
         th, td {
-            border: 1px solid #212319;/* Light gray border */
-            padding: 1em; /* 16px padding */
+            border: 1px solid #212319;
+            padding: 1em; 
             text-align: center;
-            font-size: 1em; /* 14px */
+            font-size: 1em; 
         }
 
         /* Table Header */
         thead th {
-            background-color: #212319; /* Dark gray background */
-            color:  #fef8e3;/* White text */
-            font-weight: 600; /* Semibold */
-            padding-top: 0.75em; /* 12px */
-            padding-bottom: 0.75em; /* 12px */
+            background-color: #212319; 
+            color:  #fef8e3;
+            font-weight: 600;
+            padding-top: 0.75em; 
+            padding-bottom: 0.75em;
         }
 
         /* Table Body */
         tbody td {
-            color: #2d3748; /* Darker text */
+            color: #212319; 
         }
 
 
-         /* Style for cells that span multiple rows */
+        
         tbody .cell-rowspan {
-            vertical-align: middle; /* Center content vertically */
+            vertical-align: middle; 
             text-align: center;
         }
 
-        /* Skills list styling */
+       
         tbody td ul {
             margin: 0;
-            padding-left: 1.25em; /* 20px */
+            padding-left: 1.25em; 
             list-style-type: disc;
         }
 
         tbody td ul ul {
-            margin-top: 0.25em; /* 4px */
+            margin-top: 0.25em; 
             list-style-type: circle;
         }
 
@@ -541,12 +543,6 @@ body {
   flex-wrap: wrap; /* Wrap on smaller screens */
 }
 
-.page-head h2 {
-  margin: 0;
-  font-size: 36px;
-  font-weight: 800;
-  letter-spacing: 0.3px; /* Slight letter spacing for style */
-}
 
 /* === Sorting Dropdown === */
 .sort {
