@@ -1,79 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Workshop's Evaluation</title>
   <link rel="stylesheet" href="../style.css">
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      line-height: 1.6;
-    }
-
-    main {
-      width: 100%;
-      max-width: 500px; 
-    }
-
-    .breadcrumbs {
-      font-size: 14px;
-      margin-bottom: 10px;
-      text-align: left;
-    }
-
-    .breadcrumbs a {
-      text-decoration: none;
-      color: black;
-    }
-
-    h2 {
-      font-size: 26px;
-      font-weight: bold;
-      margin-top: 0;
-      margin-bottom: 20px;
-    }
-
-    form {
-      border: 1px solid #000;
-      border-radius: 6px;
-      padding: 25px;
-      width: 100%;
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-    }
-
-    label {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    select, textarea {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #000;
-      font-size: 14px;
-      box-sizing: border-box;
-    }
-
-    textarea {
-      height: 100px;
-      resize: vertical;
-    }
-
-
     .rate-row {
       display: flex;
-      justify-content: space-between; /* left text, right stars */
-      align-items: flex-start;
+      justify-content: space-between;
+      align-items: center;
       width: 100%;
     }
 
@@ -81,71 +18,63 @@
     .rate-label {
       font-weight: bold;
       font-size: 16px;
-      line-height:2.5;
+      line-height: 2.5;
     }
-    
-        .rating-stars {
-            display: flex;
-            /* This makes the stars appear in the correct order (1-5) even though
+
+    .rating-stars {
+      display: flex;
+      /* This makes the stars appear in the correct order (1-5) even though
                the HTML is reversed (5-1). This is the key to the CSS trick. */
-            flex-direction: row-reverse;
-            justify-content: flex-end; /* Aligns stars to the right */
-            border: 0;
-            padding: 0;
-            margin: 0;
-        }
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      /* Aligns stars to the right */
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
 
-        /* Hide the actual radio buttons */
-        .rating-stars input[type="radio"] {
-            display: none;
-        }
+    /* Hide the actual radio buttons */
+    .rating-stars input[type="radio"] {
+      display: none;
+    }
 
-        /* Style the star labels */
-        .rating-stars label {
-            font-size: 1.8rem; /* 36px */
-            line-height: 2.5rem; /* 40px */
-            /* This is the empty star color, matching your image */
-            color: #d1d5db; /* Tailwind's gray-400 */
-            cursor: pointer;
-            transition: color 0.2s ease;
-        }
+    /* Style the star labels */
+    .rating-stars label {
+      font-size: 1.8rem;
+      /* 36px */
+      line-height: 2.5rem;
+      /* 40px */
+      /* This is the empty star color, matching your image */
+      color: #d1d5db;
+      /* Tailwind's gray-400 */
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
 
-        /* * This is the magic!
+    /* * This is the magic!
          * When you hover over a label, change its color.
          * Then, select all following labels (~) and change their color too.
          * Because of 'flex-direction: row-reverse', this selects all the stars
          * from the beginning up to the one you're hovering on.
         */
-        .rating-stars label:hover,
-        .rating-stars label:hover ~ label {
-            color: #f59e0b; /* Tailwind's amber-500 */
-        }
+    .rating-stars label:hover,
+    .rating-stars label:hover~label {
+      color: #f59e0b;
+      /* Tailwind's amber-500 */
+    }
 
-        /*
+    /*
          * This rule makes the rating "stick" after you click.
          * It finds the :checked radio button and selects all its
          * following labels (~), coloring them permanently.
         */
-        .rating-stars input[type="radio"]:checked ~ label {
-            color: #f59e0b; /* Tailwind's amber-500 */
-        }
-
-
-  
-
-   
-    input[type="submit"] {
-      width: 100px;
-      padding: 8px;
-      border: 1px solid #000;
-      background: transparent;
-      font-size: 14px;
-      cursor: pointer;
-      display: block;
-      margin: 0 auto;
+    .rating-stars input[type="radio"]:checked~label {
+      color: #f59e0b;
+      /* Tailwind's amber-500 */
     }
   </style>
 </head>
+
 <body>
   <!-- Header Section -->
   <header>
@@ -166,14 +95,16 @@
       <div><a href="Customers_Dashboard.html">Customer's Dashboard</a></div>
     </div>
   </header>
+
   <main>
-    <p class="breadcrumbs"><a href="#">Home</a> &gt; <a href="#">Customer's Dashboard</a> &gt; <span>Workshop's Evaluation</span></p>
+    <p class="breadcrumbs"><a href="#">Home</a> &gt; <a href="#">Customer's Dashboard</a> &gt; <span>Workshop's
+        Evaluation</span></p>
 
-    <h2>Workshop's Evaluation</h2>
+    <h1>Workshop's Evaluation</h1>
 
-    <form action="#" method="post">
-      <div>
-        <label for="workshop" >Select Workshop</label>
+    <form action="#" method="post" class="forms">
+      <div class="form-group">
+        <label for="workshop">Select Workshop</label>
         <select name="workshop">
           <option value="" disabled selected>Workshop Name</option>
           <option value="wooden">Wooden Surface Photography</option>
@@ -188,72 +119,80 @@
         </select>
       </div>
 
+      <div class="form-group">
+        <div class="rate-row">
+          <div class="rate-label">Rate &amp; Review</div>
 
-      <div class="rate-row">
-         <div class="rate-label">Rate &amp; Review</div>
+          <fieldset class="rating-stars">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars">&#9733;</label>
 
-        <fieldset class="rating-stars">
-          <input type="radio" id="star5" name="rating" value="5" />
-          <label for="star5" title="5 stars">&#9733;</label>
-          
-          <input type="radio" id="star4" name="rating" value="4" />
-          <label for="star4" title="4 stars">&#9733;</label>
-          
-          <input type="radio" id="star3" name="rating" value="3" />
-          <label for="star3" title="3 stars">&#9733;</label>
-          
-          <input type="radio" id="star2" name="rating" value="2" />
-          <label for="star2" title="2 stars">&#9733;</label>
-          
-          <input type="radio" id="star1" name="rating" value="1" />
-          <label for="star1" title="1 star">&#9733;</label>
-        </fieldset>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars">&#9733;</label>
+
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars">&#9733;</label>
+
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars">&#9733;</label>
+
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star">&#9733;</label>
+          </fieldset>
+        </div>
+
+        <textarea id="review" name="review" placeholder="Write your feedback here..."></textarea>
       </div>
 
-      <textarea id="review" name="review" placeholder="Write your feedback here..."></textarea>
-
-      <input type="submit" value="Send">
+      <div class="workshop-submit-wrapper">
+        <input type="submit" value="Send">
+      </div>
     </form>
   </main>
   <!-- Footer Section -->
-    <footer>
+  <footer>
 
-        <!-- Newsletter Section -->
-        <div id="pages-footer">
+    <!-- Newsletter Section -->
+    <div id="pages-footer">
 
-             <!-- About Section -->
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <h2 >About Riwaq</h2>
-                <p style="text-align: center;">Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
-                    We strive to provide a creative and<br> safe environment for developing artistic skills and
-                    encouraging and<br>nurturing talent.</p>
-            </div>
+      <!-- About Section -->
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <h2>About Riwaq</h2>
+        <p style="text-align: center;">Riwaq is an Arab platform for design and provides the best art<br> workshops for
+          all ages and levels.
+          We strive to provide a creative and<br> safe environment for developing artistic skills and
+          encouraging and<br>nurturing talent.</p>
+      </div>
 
-            <!--Contact Us-->
-           <div style="display: flex; ">
-            <div class="contact">
-                <a href=""><img src="../images/X.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/Instagram_icon.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/facebook2.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/youtube.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div></div>
-
-
-
-           
+      <!--Contact Us-->
+      <div style="display: flex; ">
+        <div class="contact">
+          <a href=""><img src="../images/X.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
         </div>
-
-        <div style="display:flex; justify-content: space-between; background-color: #212319">
-            <p style="margin-left:20px; text-align: center; color: #fef8e3;">Copyright © 2025 Riwaq. All rights reserved.</p>
-            <p style="margin-right:20px; text-align: center; color: #fef8e3;"><a href="" style="text-decoration: underline;color: #fef8e3;">Terms &
-                    Conditions</a> | <a href="" style="text-decoration: underline;color: #fef8e3;">Privacy Policy</a></p>
+        <div class="contact">
+          <a href=""><img src="../images/Instagram_icon.png" alt=""
+              style=" height: 25px; width:25px; margin: 10px;"></a>
         </div>
-    </footer>
+        <div class="contact">
+          <a href=""><img src="../images/facebook2.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+        </div>
+        <div class="contact">
+          <a href=""><img src="../images/youtube.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+    <div style="display:flex; justify-content: space-between; background-color: #212319">
+      <p style="margin-left:20px; text-align: center; color: #fef8e3;">Copyright © 2025 Riwaq. All rights reserved.</p>
+      <p style="margin-right:20px; text-align: center; color: #fef8e3;"><a href=""
+          style="text-decoration: underline;color: #fef8e3;">Terms &
+          Conditions</a> | <a href="" style="text-decoration: underline;color: #fef8e3;">Privacy Policy</a></p>
+    </div>
+  </footer>
 </body>
+
 </html>
