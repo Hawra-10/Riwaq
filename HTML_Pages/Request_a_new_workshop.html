@@ -10,111 +10,125 @@
 <body>
 
     <!-- Header Section -->
-  <header>
+    <header>
 
-    <img src="../images/brownLogo.png" width="200" height="200" alt="Riwaq logo">
-    <h1 style=" position: absolute; top:50px; left: 690px;">Riwaq</h1>
-    <p style=" position: absolute; top:110px; left: 545px;">A meeting place of emotions and arts that touch the
-      heart</p>
+        <img src="../images/brownLogo.png" width="200" height="200" alt="Riwaq logo">
+        <h1 style=" position: absolute; top:50px; left: 690px;">Riwaq</h1>
+        <p style=" position: absolute; top:110px; left: 545px;">A meeting place of emotions and arts that touch the
+            heart</p>
 
 
-    <!-- Navigation Menu -->
-    <div id="navigation">
-      <div><a href="HomPage.html">Home Page</a></div>
-      <div><a href="Workshops.html">Workshops</a></div>
-      <div><a href="HomPage.html">Our Newsletter</a></div>
-      <div><a href="Provider's_Dashboard.html">Provider's Dashboard</a> </div>
-      <div><a href="About_us.html">About Us</a></div>
-      <div><a href="Customers_Dashboard.html">Customer's Dashboard</a></div>
-    </div>
-  </header>
+        <!-- Navigation Menu -->
+        <div id="navigation">
+            <div><a href="HomPage.html">Home Page</a></div>
+            <div><a href="Workshops.html">Workshops</a></div>
+            <div><a href="HomPage.html">Our Newsletter</a></div>
+            <div><a href="Provider's_Dashboard.html">Provider's Dashboard</a> </div>
+            <div><a href="About_us.html">About Us</a></div>
+            <div><a href="Customers_Dashboard.html">Customer's Dashboard</a></div>
+        </div>
+    </header>
 
 
     <main>
-         <p class="breadcrumbs"><a href="HomPage.html">Home</a> &gt; <a href="Customers_Dashboard.html">Customer's Dashboard</a> &gt; <span> Request a New Workshop</span>
-            <div>
+        <p class="breadcrumbs"><a href="HomPage.html">Home</a> &gt; <a href="Customers_Dashboard.html">Customer's
+                Dashboard</a> &gt; <span> Request a New Workshop</span>
         <div>
-            <h1> Request a New Workshop </h1>
+            <div>
+                <h1> Request a New Workshop </h1>
 
-            <form class="forms">
-                <fieldset>
-                    <legend> Workshop Information </legend>
+                <form class="forms" action="#" method="post">
+                    <fieldset>
+                        <legend> Workshop Information </legend>
 
-                    <div class="form-group">
-                        <select name="requested-workshop">
-                            <option> Workshop1</option>
-                            <option> Workshop2</option>
-                            <option> Workshop3</option>
-                            <option> Workshop4</option>
-                            <option> Workshop5</option>
-                        </select><br>
-                    </div>
+                        <div class="form-group">
+                            <select name="requested-workshop">
+                                <option value="" disabled selected>Workshop Name</option>
+                                <option value="wooden">Wooden Surface Photography</option>
+                                <option value="Metal">Metal Engraving Art</option>
+                                <option value="Art">Clay Art & Pottery</option>
+                                <option value="Embroidery">Embroidery & Fabric Art</option>
+                                <option value="Candle">Candle Making & Scents</option>
+                                <option value="Leather">Leather Crafting Basics</option>
+                                <option value="Resin">Resin Art Workshop</option>
+                                <option value="Soap">Soap Making with Natural Oils</option>
+                                <option value="Calligraphy">Calligraphy & Hand Lettering</option>
+                            </select><br>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="name"> Your Name </label>
-                        <input type="text" name="name" placeholder="Your Name">
-                        <br>
-                    </div>
+                        <div class="form-group">
+                            <label for="name"> Your Name </label>
+                            <input type="text" name="name" placeholder="Your Name">
+                            <br>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="due-date"> Due Date </label>
-                        <input type="date" name="due-date">
-                        <br>
-                    </div>
+                        <div class="form-group">
+                            <label for="due-date"> Due Date </label>
+                            <input type="date" name="due-date">
+                            <br>
+                        </div>
 
-                    <div class="form-group">
-                        <label for="request-description"> Request Description </label>
-                        <textarea name="request-description" placeholder="Request Description"></textarea>
-                        <br>
-                    </div>
+                        <div class="form-group">
+                            <label for="request-description"> Request Description </label>
+                            <textarea name="request-description" placeholder="Request Description"></textarea>
+                            <br>
+                        </div>
 
-                    <div class="workshop-submit-wrapper">
-                        <input type="submit" value="Book">
-                    </div>
+                        <div class="workshop-submit-wrapper">
+                            <input type="submit" value="Book">
+                        </div>
 
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
 
-        </div>
+            </div>
     </main>
-<!-- Footer Section -->
+    <!-- Footer Section -->
     <footer>
 
         <!-- Newsletter Section -->
         <div id="pages-footer">
 
-             <!-- About Section -->
+            <!-- About Section -->
             <div style="display: flex; flex-direction: column; align-items: center;">
-                <h2 >About Riwaq</h2>
-                <p style="text-align: center;">Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
+                <h2>About Riwaq</h2>
+                <p style="text-align: center;">Riwaq is an Arab platform for design and provides the best art<br>
+                    workshops for all ages and levels.
                     We strive to provide a creative and<br> safe environment for developing artistic skills and
                     encouraging and<br>nurturing talent.</p>
             </div>
 
             <!--Contact Us-->
-           <div style="display: flex; ">
-            <div class="contact">
-                <a href=""><img src="../images/X.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+            <div style="display: flex; ">
+                <div class="contact">
+                    <a href=""><img src="../images/X.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
+                </div>
+                <div class="contact">
+                    <a href=""><img src="../images/Instagram_icon.png" alt=""
+                            style=" height: 25px; width:25px; margin: 10px;"></a>
+                </div>
+                <div class="contact">
+                    <a href=""><img src="../images/facebook2.png" alt=""
+                            style=" height: 25px; width:25px; margin: 10px;"></a>
+                </div>
+                <div class="contact">
+                    <a href=""><img src="../images/youtube.png" alt=""
+                            style=" height: 25px; width:25px; margin: 10px;"></a>
+                </div>
             </div>
-            <div class="contact">
-                <a href=""><img src="../images/Instagram_icon.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/facebook2.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div>
-            <div class="contact">
-                <a href=""><img src="../images/youtube.png" alt="" style=" height: 25px; width:25px; margin: 10px;"></a>
-            </div></div>
 
 
 
-           
+
         </div>
 
         <div style="display:flex; justify-content: space-between; background-color: #212319">
-            <p style="margin-left:20px; text-align: center; color: #fef8e3;">Copyright © 2025 Riwaq. All rights reserved.</p>
-            <p style="margin-right:20px; text-align: center; color: #fef8e3;"><a href="" style="text-decoration: underline;color: #fef8e3;">Terms &
-                    Conditions</a> | <a href="" style="text-decoration: underline;color: #fef8e3;">Privacy Policy</a></p>
+            <p style="margin-left:20px; text-align: center; color: #fef8e3;">Copyright © 2025 Riwaq. All rights
+                reserved.</p>
+            <p style="margin-right:20px; text-align: center; color: #fef8e3;"><a href=""
+                    style="text-decoration: underline;color: #fef8e3;">Terms &
+                    Conditions</a> | <a href="" style="text-decoration: underline;color: #fef8e3;">Privacy Policy</a>
+            </p>
         </div>
 
     </footer>
