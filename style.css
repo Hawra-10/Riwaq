@@ -81,6 +81,13 @@ header{
 }
 
 
+
+#pages-footer{display: flex;
+              flex-direction: column;
+            align-items: center;}     
+
+          
+
 /* =================================
           Home Page 
 ================================= */
@@ -168,7 +175,7 @@ header{
         
         footer {
             color: black;
-            background-color: #666;
+            background-color: #75795f;
         }
 
          #newsletter-about {
