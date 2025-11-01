@@ -827,6 +827,8 @@ body {
     .buttons {
       text-align: center;
       margin-top: 30px;
+  text-decoration: none;
+
     }
 
     .shButton {
@@ -879,3 +881,6 @@ body {
     .booking-box p {
       margin: 5px 0;
     }
+	
+	
+ 
