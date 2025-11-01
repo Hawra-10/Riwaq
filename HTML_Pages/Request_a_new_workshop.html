@@ -30,11 +30,12 @@
     </header>
 
 
-    <main>
-        <p class="breadcrumbs"><a href="HomPage.html">Home</a> &gt; <a href="Customers_Dashboard.html">Customer's
+    <main id="forms-main">
+        
+            <div style="display: flex; flex-direction: column; align-items: flex-start;"> 
+                <p class="breadcrumbs"><a href="HomPage.html">Home</a> &gt; <a href="Customers_Dashboard.html">Customer's
                 Dashboard</a> &gt; <span> Request a New Workshop</span>
-        <div>
-            <div>
+        
                 <h1> Request a New Workshop </h1>
 
                 <form class="forms" action="#" method="post">
@@ -58,19 +59,19 @@
 
                         <div class="form-group">
                             <label for="name"> Your Name </label>
-                            <input type="text" name="name" placeholder="Your Name">
+                            <input id="name" type="text" name="name" placeholder="Your Name">
                             <br>
                         </div>
 
                         <div class="form-group">
                             <label for="due-date"> Due Date </label>
-                            <input type="date" name="due-date">
+                            <input id="due-date" type="date" name="due-date">
                             <br>
                         </div>
 
                         <div class="form-group">
                             <label for="request-description"> Request Description </label>
-                            <textarea name="request-description" placeholder="Request Description"></textarea>
+                            <textarea id="request-description" name="request-description" placeholder="Request Description"></textarea>
                             <br>
                         </div>
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Workshop's Evaluation</title>
   <link rel="stylesheet" href="../style.css">
- 
+
 </head>
 
 <body>
@@ -30,8 +30,11 @@
     </div>
   </header>
 
-  <main>
-    <p class="breadcrumbs"><a href="HomPage.html">Home</a> &gt; <a href="Customers_Dashboard.html">Customer's Dashboard</a> &gt; <span>Workshop's
+  <main id="forms-main">
+
+    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+    <p class="breadcrumbs"><a href="HomPage.html">Home</a> &gt; <a href="Customers_Dashboard.html">Customer's
+        Dashboard</a> &gt; <span>Workshop's
         Evaluation</span></p>
 
     <h1>Workshop's Evaluation</h1>
@@ -39,7 +42,7 @@
     <form action="#" method="post" class="forms">
       <div class="form-group">
         <label for="workshop">Select Workshop</label>
-        <select name="workshop">
+        <select id="workshop" name="workshop">
           <option value="" disabled selected>Workshop Name</option>
           <option value="wooden">Wooden Surface Photography</option>
           <option value="Metal">Metal Engraving Art</option>
@@ -82,6 +85,7 @@
         <input type="submit" value="Send">
       </div>
     </form>
+    </div>
   </main>
   <!-- Footer Section -->
   <footer>
