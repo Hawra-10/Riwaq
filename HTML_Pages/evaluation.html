@@ -6,73 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Workshop's Evaluation</title>
   <link rel="stylesheet" href="../style.css">
-  <style>
-    .rate-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-
-
-    .rate-label {
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 2.5;
-    }
-
-    .rating-stars {
-      display: flex;
-      /* This makes the stars appear in the correct order (1-5) even though
-               the HTML is reversed (5-1). This is the key to the CSS trick. */
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      /* Aligns stars to the right */
-      border: 0;
-      padding: 0;
-      margin: 0;
-    }
-
-    /* Hide the actual radio buttons */
-    .rating-stars input[type="radio"] {
-      display: none;
-    }
-
-    /* Style the star labels */
-    .rating-stars label {
-      font-size: 1.8rem;
-      /* 36px */
-      line-height: 2.5rem;
-      /* 40px */
-      /* This is the empty star color, matching your image */
-      color: #d1d5db;
-      /* Tailwind's gray-400 */
-      cursor: pointer;
-      transition: color 0.2s ease;
-    }
-
-    /* * This is the magic!
-         * When you hover over a label, change its color.
-         * Then, select all following labels (~) and change their color too.
-         * Because of 'flex-direction: row-reverse', this selects all the stars
-         * from the beginning up to the one you're hovering on.
-        */
-    .rating-stars label:hover,
-    .rating-stars label:hover~label {
-      color: #f59e0b;
-      /* Tailwind's amber-500 */
-    }
-
-    /*
-         * This rule makes the rating "stick" after you click.
-         * It finds the :checked radio button and selects all its
-         * following labels (~), coloring them permanently.
-        */
-    .rating-stars input[type="radio"]:checked~label {
-      color: #f59e0b;
-      /* Tailwind's amber-500 */
-    }
-  </style>
+ 
 </head>
 
 <body>
@@ -121,7 +55,7 @@
 
       <div class="form-group">
         <div class="rate-row">
-          <div class="rate-label">Rate &amp; Review</div>
+          <label for="review">Rate &amp; Review</label>
 
           <fieldset class="rating-stars">
             <input type="radio" id="star5" name="rating" value="5" />

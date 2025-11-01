@@ -295,6 +295,7 @@ input[form="delete-staff-form"] {float: right;
     padding: 2rem 3rem;
     border-radius: 0.5rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
 }
 
 /* Form Layout */
@@ -304,7 +305,7 @@ input[form="delete-staff-form"] {float: right;
     gap: 2rem 3rem;
 }
 
-/* On screens wider than 768px, use 2 columns */
+
 @media (min-width: 768px) {
     #staff-member-form {
         grid-template-columns: 1fr 1fr;
@@ -452,6 +453,53 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #374151; 
 }
+
+
+/* Rating Stars */
+
+.rate-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+
+    .rating-stars {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Hide the actual radio buttons */
+    .rating-stars input[type="radio"] {
+      display: none;
+    }
+
+    /* Style the star labels */
+    .rating-stars label {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      color: #d1d5db;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+   
+    .rating-stars label:hover,
+    .rating-stars label:hover~label {
+      color: #f59e0b;
+      
+    }
+
+    
+    .rating-stars input[type="radio"]:checked~label {
+      color: #f59e0b;
+     
+    }
 
 
 /* =================================
