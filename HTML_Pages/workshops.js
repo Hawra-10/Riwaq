@@ -8,20 +8,40 @@ function sortWorkshops() {
         arr[i] = cards[i];
     }
     
-    if (sortValue === "price-high" || sortValue === "price-low") {
+    if (sortValue == "price-high") {
         arr.sort(function(a, b) {
             var priceA = parseFloat(a.querySelector(".pprice").innerHTML);
             var priceB = parseFloat(b.querySelector(".pprice").innerHTML);
-            return sortValue === "price-high" ? priceB - priceA : priceA - priceB;
+            return priceB - priceA;
         });
-    } else if (sortValue === "name-a-z" || sortValue === "name-z-a") {
+    } else if (sortValue == "price-low") {
+        arr.sort(function(a, b) {
+            var priceA = parseFloat(a.querySelector(".pprice").innerHTML);
+            var priceB = parseFloat(b.querySelector(".pprice").innerHTML);
+            return priceA - priceB;
+        });
+    } else if (sortValue == "name-a-z") {
         arr.sort(function(a, b) {
             var nameA = a.querySelector("h3").innerHTML.toLowerCase();
             var nameB = b.querySelector("h3").innerHTML.toLowerCase();
-            if (sortValue === "name-a-z") {
-                return nameA < nameB ? -1 : nameA > nameB ? 1 : 0;
+            if (nameA < nameB) {
+                return -1;
+            } else if (nameA > nameB) {
+                return 1;
             } else {
-                return nameA > nameB ? -1 : nameA < nameB ? 1 : 0;
+                return 0;
+            }
+        });
+    } else if (sortValue == "name-z-a") {
+        arr.sort(function(a, b) {
+            var nameA = a.querySelector("h3").innerHTML.toLowerCase();
+            var nameB = b.querySelector("h3").innerHTML.toLowerCase();
+            if (nameA > nameB) {
+                return -1;
+            } else if (nameA < nameB) {
+                return 1;
+            } else {
+                return 0;
             }
         });
     }
