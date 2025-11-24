@@ -5,7 +5,7 @@
 // Database of all available workshops with their details
 
 
-/*const allWorkshops = [
+const allWorkshops = [
     {
         name: "Wooden Surface Photography",
         subtitle: "Bring Your Memories to Life",
@@ -293,9 +293,10 @@ window.workshopSystem = {
     getCommonWorkshops: getCommonWorkshops,
     getRequestCount: getRequestCount,
     allWorkshops: allWorkshops
-};*/
+};
 
 
+/*
 // All workshops database
 var allWorkshops = [
     {
@@ -475,4 +476,4 @@ function renderCommonWorkshops() {
 // Run when page loads
 window.onload = function() {
     renderCommonWorkshops();
-};
+};*/
