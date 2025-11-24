@@ -18,7 +18,7 @@ form.addEventListener('submit', function(e) {
     }
     
     
-    if (rating >= 4) {
+    if (rating >= 3) {
         alert('Thank you for your wonderful feedback!');
     } else {
         alert('We apologize for not meeting your expectations.');
