@@ -3,7 +3,9 @@
 // ===== LECTURE 9: ARRAYS - Array of Objects =====
 // "Elements of an array do not have to be of the same type"
 // Database of all available workshops with their details
-const allWorkshops = [
+
+
+/*const allWorkshops = [
     {
         name: "Wooden Surface Photography",
         subtitle: "Bring Your Memories to Life",
@@ -291,4 +293,186 @@ window.workshopSystem = {
     getCommonWorkshops: getCommonWorkshops,
     getRequestCount: getRequestCount,
     allWorkshops: allWorkshops
+};*/
+
+
+// All workshops database
+var allWorkshops = [
+    {
+        name: "Wooden Surface Photography",
+        subtitle: "Bring Your Memories to Life",
+        description: "Transform your favorite photos into warm wooden panels, adding a personal touch to your home decor.",
+        price: "160.00 SAR",
+        location: "Riyadh – Almalqa",
+        image: "../images/wooden2.jpeg",
+        blurredImage: "../images/blurWood.JPEG"
+    },
+    {
+        name: "Metal Engraving Art",
+        subtitle: "Etch Your Creativity in Steel",
+        description: "Design and carve patterns or names onto small metal plates or jewelry pieces, turning raw metal into personalized keepsakes.",
+        price: "140.00 SAR",
+        location: "Jeddah – Al Rawdah",
+        image: "../images/m3dn.jpeg",
+        blurredImage: "../images/blurM3.JPEG"
+    },
+    {
+        name: "Clay Art & Pottery",
+        subtitle: "Shape Your Imagination",
+        description: "Discover the joy of creating with your hands — mold, carve, and paint your own ceramic pieces to take home.",
+        price: "170.00 SAR",
+        location: "Riyadh – Al Yasmin",
+        image: "../images/pottery.jpeg",
+        blurredImage: "../images/blurPottery.JPEG"
+    },
+    {
+        name: "Embroidery & Fabric Art",
+        subtitle: "Threads That Tell Stories",
+        description: "Bring color to cloth by learning creative stitching patterns and designs for clothes, hoops, and home decor.",
+        price: "160.00 SAR",
+        location: "Jeddah – Al Salamah",
+        image: "../images/embroidery.jpeg",
+        blurredImage: "../images/blurEmbroidery.JPEG"
+    },
+    {
+        name: "Candle Making & Scents",
+        subtitle: "Light Up Your Space",
+        description: "Mix soothing fragrances and colors to craft personalized candles perfect for gifts or cozy nights in.",
+        price: "200.00 SAR",
+        location: "Dammam – Al Faisaliah",
+        image: "../images/candel2.jpeg",
+        blurredImage: "../images/blurCandel.JPEG"
+    },
+    {
+        name: "Leather Crafting Basics",
+        subtitle: "From Hide to Handmade",
+        description: "Learn how to design, cut, and stitch your own leather wallet or keychain using traditional techniques.",
+        price: "300.00 SAR",
+        location: "Riyadh – Al Nakhil",
+        image: "../images/Leather.jpeg",
+        blurredImage: "../images/blurLeather.JPEG"
+    },
+    {
+        name: "Resin Art Workshop",
+        subtitle: "Freeze Time in Art",
+        description: "Create stunning resin pieces — from ocean-inspired coasters to jewelry — blending colors, patterns, and texture.",
+        price: "189.00 SAR",
+        location: "Jeddah – Al Andalus",
+        image: "../images/Resin.jpeg",
+        blurredImage: "../images/blurResin.JPEG"
+    },
+    {
+        name: "Soap Making with Natural Oils",
+        subtitle: "Pure, Simple, Organic",
+        description: "Blend essential oils and natural ingredients to create custom organic soaps that look and smell amazing.",
+        price: "160.00 SAR",
+        location: "Riyadh – Al Sahafa",
+        image: "../images/Soap.jpeg",
+        blurredImage: "../images/blurSoap.JPEG"
+    },
+    {
+        name: "Calligraphy & Hand Lettering",
+        subtitle: "Write with Style",
+        description: "Learn the art of elegant writing — from brush strokes to designing personalized cards and quotes.",
+        price: "150.00 SAR",
+        location: "Dammam – Al Rakah",
+        image: "../images/write.jpeg",
+        blurredImage: "../images/blurWrite.JPEG"
+    }
+];
+
+// Get request count from localStorage
+function getRequestCount(workshopName) {
+    var storedCounts = localStorage.getItem("workshopRequestCounts");
+    
+    if (storedCounts) {
+        var counts = JSON.parse(storedCounts);
+        return counts[workshopName] || 0;
+    }
+    
+    return 0;
+}
+
+// Increment request count
+function incrementRequestCount(workshopName) {
+    var storedCounts = localStorage.getItem("workshopRequestCounts");
+    var counts = {};
+    
+    if (storedCounts) {
+        counts = JSON.parse(storedCounts);
+    }
+    
+    if (counts[workshopName]) {
+        counts[workshopName] = counts[workshopName] + 1;
+    } else {
+        counts[workshopName] = 1;
+    }
+    
+    localStorage.setItem("workshopRequestCounts", JSON.stringify(counts));
+    
+    return counts[workshopName];
+}
+
+// Get common workshops (3+ requests)
+function getCommonWorkshops() {
+    var commonWorkshops = [];
+    
+    for (var i = 0; i < allWorkshops.length; i++) {
+        var workshop = allWorkshops[i];
+        var requestCount = getRequestCount(workshop.name);
+        
+        if (requestCount >= 3) {
+            commonWorkshops[commonWorkshops.length] = workshop;
+        }
+    }
+    
+    return commonWorkshops;
+}
+
+// Render common workshops
+function renderCommonWorkshops() {
+    var container = document.getElementById("common-workshops");
+    
+    if (container == null) {
+        return;
+    }
+    
+    var commonWorkshops = getCommonWorkshops();
+    
+    // Clear container
+    container.innerHTML = "";
+    
+    if (commonWorkshops.length == 0) {
+        container.innerHTML = "<p style='text-align: center; padding: 40px;'>No workshops have been requested 3 or more times yet.</p>";
+        return;
+    }
+    
+    // Build HTML for all workshops
+    var html = "";
+    
+    for (var i = 0; i < commonWorkshops.length; i++) {
+        var w = commonWorkshops[i];
+        
+        html = html + "<article class='card'>";
+        html = html + "<img class='bg' src='" + w.image + "' alt=''>";
+        html = html + "<img class='blurred-img' src='" + w.blurredImage + "' alt=''>";
+        html = html + "<div class='card-inner'>";
+        html = html + "<div class='card-header'>";
+        html = html + "<h3>" + w.name + "<br>" + w.subtitle + "</h3>";
+        html = html + "</div>";
+        html = html + "<div class='centered-workshops'>" + w.description + "</div>";
+        html = html + "</div>";
+        html = html + "<div class='meta'>";
+        html = html + "<span class='pprice'>" + w.price + "</span>";
+        html = html + "<span class='location'>" + w.location + "</span>";
+        html = html + "</div>";
+        html = html + "</article>";
+    }
+    
+    container.innerHTML = html;
+}
+
+// Run when page loads
+window.onload = function() {
+    renderCommonWorkshops();
 };
