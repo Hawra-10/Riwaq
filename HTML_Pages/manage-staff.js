@@ -463,7 +463,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // ===== LECTURE 9: Control Statements - If Statement =====
         // Check if any checkbox is selected
-        if (checkboxes.length === 0) {
+        if (checkboxes.length == 0) {
             // ===== LECTURE 9: Window Object - The alert Method =====
             alert('Please select at least one member');
             return;

@@ -665,7 +665,7 @@ function renderCommonWorkshops() {
     // "innerHTML stands for the HTML content within that element"
     
     // ===== LECTURE 9: Control Statements - If Statement =====
-    if (commonWorkshops.length === 0) {
+    if (commonWorkshops.length == 0) {
         // Build HTML string for no workshops message
         container.innerHTML = '<p style="text-align: center; font-size: 18px; color: #7f8c8d; padding: 40px;">No workshops have been requested 3 or more times yet. Check back soon!</p>';
         console.log('No common workshops to display');

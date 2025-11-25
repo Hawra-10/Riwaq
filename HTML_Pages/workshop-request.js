@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const mainElement = document.getElementById('forms-main');
             if (mainElement) {
                 const currentHTML = mainElement.innerHTML;
-                mainElement.innerHTML = currentHTML + '<div id="requests-display-area" style="margin-top: 30px; width: 100%;"></div>';
+                mainElement.innerHTML = currentHTML + '<div id="requests-display-area" style="margin-top: 30px; width: 80%;"></div>';
                 displayArea = document.getElementById('requests-display-area');
             }
         }
@@ -237,15 +237,15 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         
-        // Build HTML for all request cards
-        let cardsHTML = '<h2 style="color: #2c3e50; margin-bottom: 20px;">Your Workshop Requests</h2>';
+        // Build HTML for all request cards  
+        let cardsHTML = '<h1 style=" color: #212319; margin-bottom: 20px;">Your Workshop Requests</h1>';
         
         for (let i = 0; i < workshopRequests.length; i++) {
             const request = workshopRequests[i];
             
             cardsHTML = cardsHTML + 
-                '<div class="request-card" style="border: 2px solid #3498db; border-radius: 8px; padding: 20px; margin-bottom: 15px; background-color: #f8f9fa;">' +
-                    '<h3 style="color: #3498db; margin-top: 0;">Request #' + (i + 1) + '</h3>' +
+                '<div class="request-card" style="border: 0.5px solid #212319; border-radius: 8px; padding: 20px; margin-bottom: 15px; background-color: #f5edd9">' +
+                    '<h3 style="color: #212319; margin-top: 0;">Request #' + (i + 1) + '</h3>' +
                     '<p><strong>Workshop:</strong> ' + request.workshop + '</p>' +
                     '<p><strong>Customer Name:</strong> ' + request.name + '</p>' +
                     '<p><strong>Due Date:</strong> ' + request.dueDate + '</p>' +
@@ -367,7 +367,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     counterDiv.style.color = '#e74c3c';
                 }
                 
-                alert('Form cleared. You can now add another workshop request.');
+                //alert('Form cleared. You can now add another workshop request.');
             } else {
                 window.location.href = 'Customers_Dashboard.html';
             }
