@@ -11,12 +11,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="clock.js"></script>
     <script src="common-workshops.js"></script>
-    <style>
-    /* {
+   <style>
+    * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }*/
+        }
 		
 		body {
             font-family: Arial, sans-serif;
@@ -122,7 +122,6 @@
             color: #fef8e3;
 			}
 		
-
 		/* Main content */
         main {
             padding: 20px;
@@ -212,7 +211,7 @@
 		
         /* Footer */
         footer {
-           /* padding: 20px;*/
+            padding: 20px;
         }
 
         #newsletter-about {
@@ -221,7 +220,6 @@
             justify-content: space-between;
             gap: 20px;
             margin-bottom: 20px;
-            /*border: solid blue;*/
         }
 
         #newsletter, #about {
@@ -256,8 +254,7 @@
             display: flex;
             justify-content: center;
             gap: 10px;
-            /*margin: 20px 0;*/
-            margin: 0px;
+            margin: 20px 0;
         }
 
         .contact img {
@@ -368,12 +365,6 @@
                 width: 100%;
             }
             
-             #newsletter-about{
-			flex-direction: column;
-			align-items: center;
-			
-			}
-
             .footer-bottom {
                 flex-direction: column;
                 text-align: center;
@@ -413,6 +404,8 @@
             background-color: #75795f;
         }
     </style>
+
+    
 </head>
 
 <body class="light-theme">
@@ -467,7 +460,7 @@
         <section id="common">
             <h1>Common Workshops</h1>
 
-            <div id="common-workshops">
+            <div id="common-workshops" style="justify-content: space-around;">
                 <article class="card">
                     <img class="bg" src="../images/wooden2.jpeg" alt="">
                     <img class="blurred-img" src="../images/blurWood.JPEG" alt="">
@@ -560,9 +553,7 @@
                 <div class="meta"><span class="pprice">140.00 SAR</span><span class="location">Jeddah – Al Rawdah</span>
                 </div>
             </article>
-        </section>
 
-        <section class="cards" aria-label="Workshop cards">
             <!-- 3 -->
             <article class="card">
                 <img class="bg" src="../images/pottery.jpeg" alt="">
@@ -685,7 +676,7 @@
 
 
     <!-- Footer Section -->
-    <footer><!--if the problem still happining so i need to but id to my footer, because there is something interfring my footer style this thing is in the big style sheet-->
+    <footer>
 
         <!-- Newsletter Section -->
         <div id="newsletter-about">
@@ -693,7 +684,8 @@
                 <h2>Subscribe to our weekly newsletter</h2>
                 <form>
                     <!--<label for="email">Enter your email</label>-->
-                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    <input type="email" id="email" name="email" placeholder="Enter your email"
+                        style="width: 200px; height: 9px;">
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
@@ -701,16 +693,20 @@
             <!--Contact Us-->
 
             <div class="contact">
-                <a href=""><img src="../images/X.png" alt="x contact"></a>
+                <a href=""><img src="../images/X.png" alt="x contact"
+                        style=" height: 25px; width:25px; margin: 10px;"></a>
             </div>
             <div class="contact">
-                <a href=""><img src="../images/Instagram_icon.png" alt="Instagram contact"></a>
+                <a href=""><img src="../images/Instagram_icon.png" alt="Instagram contact"
+                        style=" height: 25px; width:25px; margin: 10px;"></a>
             </div>
             <div class="contact">
-                <a href=""><img src="../images/facebook2.png" alt="facebook contact"></a>
+                <a href=""><img src="../images/facebook2.png" alt="facebook contact"
+                        style=" height: 25px; width:25px; margin: 10px;"></a>
             </div>
             <div class="contact">
-                <a href=""><img src="../images/youtube.png" alt="youtube contact"></a>
+                <a href=""><img src="../images/youtube.png" alt="youtube contact"
+                        style=" height: 25px; width:25px; margin: 10px;"></a>
             </div>
 
 
@@ -718,15 +714,18 @@
             <!-- About Section -->
             <div id="about">
                 <h2 style="text-align: center;">About Riwaq</h2>
-                <p style="text-align: center;">Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
+                <p>Riwaq is an Arab platform for design and provides the best art<br> workshops for all ages and levels.
                     We strive to provide a creative and<br> safe environment for developing artistic skills and
                     encouraging and<br>nurturing talent.</p>
             </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>Copyright ©️ 2025 Riwaq. All rightsreserved.</p>
-            <p><a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a>
+        <div style="display:flex; justify-content: space-between; background-color: #212319;">
+            <p style="margin-left:20px; text-align: center; color: #fef8e3; ">Copyright ©️ 2025 Riwaq. All rights
+                reserved.</p>
+            <p style="margin-right:20px; text-align: center; color: #fef8e3; "><a href=""
+                    style="text-decoration: underline; color: #fef8e3;">Terms &
+                    Conditions</a> | <a href="" style="text-decoration: underline; color: #fef8e3;">Privacy Policy</a>
             </p>
         </div>
         <!-- Clock -->
@@ -734,67 +733,6 @@
             <span id="clock"></span>
         </div>
     </footer>
-
-    <script>
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-        
-        // Check for saved theme preference or default to light theme
-        const currentTheme = localStorage.getItem('theme') || 'light-theme';
-        body.classList.add(currentTheme);
-        updateThemeIcon();
-        
-        themeToggle.addEventListener('click', () => {
-            if (body.classList.contains('light-theme')) {
-                body.classList.replace('light-theme', 'dark-theme');
-                localStorage.setItem('theme', 'dark-theme');
-            } else {
-                body.classList.replace('dark-theme', 'light-theme');
-                localStorage.setItem('theme', 'light-theme');
-            }
-            updateThemeIcon();
-        });
-        
-        function updateThemeIcon() {
-            const icon = themeToggle.querySelector('i');
-            if (body.classList.contains('light-theme')) {
-                icon.className = 'fas fa-moon';
-            } else {
-                icon.className = 'fas fa-sun';
-            }
-        }
-        
-        // Back to top functionality
-        const backToTopBtn = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.style.display = 'flex';
-            } else {
-                backToTopBtn.style.display = 'none';
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    
-        
-        // Example: Add hover effect to workshop cards
-        const workshopCards = document.querySelectorAll('.card');
-        workshopCards.forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
-        });
-    </script>
 </body>
 
 </html>
