@@ -13,12 +13,7 @@ header p{
 header h2{text-align: center; margin-top: 60px;}
 
 /*vision and mission*/
-#VM {
-    display: flex; 
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-around ;
-    align-items: center;}
+
 
 #HD { display: flex; 
     flex-direction:row;
@@ -196,7 +191,7 @@ header{
             background-color: #75795f;
         }
 
-         #newsletter-about {
+         /*#newsletter-about {
             border-top: 1px solid black;
             border-left: 1px solid black;
             border-right: 1px solid black;
@@ -236,7 +231,7 @@ header{
 
         .contact a {
             text-decoration: none;
-        }
+        }*/
 
 
 
