@@ -43,13 +43,20 @@
             text-align: center;
         }*/
 
-		
-		.logo-container {
+		/*.logo-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-bottom: 20px;
+        }*/
+		.logo-container {
+            display: flex;
+            flex-direction: row;
+          
+            align-items: center;
+            margin-bottom: 20px;
         }
+        
 		header img {
             max-width: 100%;
             height: auto;
@@ -69,6 +76,8 @@
             font-size: 1.1rem;
         }
 		
+        
+
 		/* Vision and Mission Section */
         #VM {
             display: flex;
@@ -346,6 +355,13 @@
                 font-size: 1rem;
             }
             
+            .logo-container {
+           
+            flex-direction: column;
+            }/*added this*/
+
+            
+
             #navigation {
                 flex-direction: column;
                 align-items: center;
@@ -431,9 +447,11 @@
     <!-- Header Section -->
     <header>
         <div class="logo-container">
-        <img src="/images/brownLogo.png" width="200" height="200" alt="Riwaq logo">
-        <h1>Riwaq</h1>
-        <p>A meeting place of emotions and arts that touch the heart</p>
+            <div style="flex: 1;"><img src="/images/brownLogo.png" width="200" height="200" alt="Riwaq logo"></div>
+            <div class="riwaq" style="flex: 1;">
+            <h1>Riwaq</h1>
+            <p>A meeting place of emotions and arts that touch the heart</p>
+            </div>
         </div>
 
         <!-- Vision and Mission Section -->
