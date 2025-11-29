@@ -1,0 +1,41 @@
+/* Shared Theme Styles */
+body.light-theme {
+    background-color: #fef8e3;
+    color: #212319;
+}
+
+body.dark-theme {
+    background-color: #212319;
+    color: #fef8e3;
+}
+
+/* Theme-aware navigation - applied to all pages */
+body.light-theme #navigation div {
+    background-color: #e8e0c7;
+}
+
+body.dark-theme #navigation div {
+    background-color: #3a3a2a;
+}
+
+/* Theme-aware buttons */
+body.light-theme button:not(.theme-toggle):not(.back-to-top) {
+    background-color: #212319;
+    color: #fef8e3;
+}
+
+body.dark-theme button:not(.theme-toggle):not(.back-to-top) {
+    background-color: #fef8e3;
+    color: #212319;
+}
+
+/* Theme-aware cards */
+body.dark-theme .card {
+    background-color: #2a2a1a;
+    color: #fef8e3;
+}
+
+/* Ensure smooth transitions */
+body, #navigation div, button, .card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
