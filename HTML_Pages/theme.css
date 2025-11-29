@@ -10,15 +10,20 @@ body.dark-theme {
 }
 
 /* Theme-aware navigation - applied to all pages */
-body.light-theme #navigation div {
-    background-color: #e8e0c7;
-}
+body.light-theme #navigation a {
+            color: #fef8e3;
+        }
 
-body.dark-theme #navigation div {
-    background-color: #3a3a2a;
-}
+        
+        body.dark-theme #navigation a {
+            color: #fef8e3;
+        }
 
-        .dark-theme h1 {
+		body.dark-theme #navigation {
+            background-color: #3a3a2a;
+        }
+
+        body.dark-theme h1 {
             color: #fef8e3;
 			}
 		
