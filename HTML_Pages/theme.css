@@ -59,7 +59,7 @@ body, #navigation div, button, .card {
 
 
 
-#sort{
+body.dark-theme #sort{
    color: #fef8e3;
    background-color: #2a2a1a;
 }
