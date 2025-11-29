@@ -31,7 +31,7 @@ localStorage.removeItem("providerWorkshops") //for remove
 
             const price = document.createElement("div");
             price.classList.add("price");
-            price.textContent = `$${workshop.price}`;
+            price.textContent = `SAR ${workshop.price}`;
 
             div.appendChild(imgBox);
             div.appendChild(info);
