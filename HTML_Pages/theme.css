@@ -19,6 +19,9 @@ body.light-theme #navigation a {
             color: #fef8e3;
         }
 
+        body.dark-theme a {/*for about us*/
+            color: #fef8e3;
+        }
 		body.dark-theme #navigation {
             background-color: #3a3a2a;
         }
@@ -26,7 +29,7 @@ body.light-theme #navigation a {
         body.dark-theme h1 {
             color: #fef8e3;
 			}
-		
+	
 
 /* Theme-aware buttons */
 body.light-theme button:not(.theme-toggle):not(.back-to-top) {
