@@ -758,6 +758,7 @@
     </footer>
 
     <script>
+        /*
         // Theme toggle functionality
         const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
@@ -785,7 +786,33 @@
             } else {
                 icon.className = 'fas fa-sun';
             }
+        }*/
+
+        // In homepage only - add theme toggle button functionality
+        document.addEventListener('DOMContentLoaded', function() {
+        // Create or select theme toggle button (only in homepage)
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                // This will update theme across all pages
+                toggleGlobalTheme();
+                updateThemeIcon();
+            });
+
+            // Update icon based on current theme
+            function updateThemeIcon() {
+                const icon = themeToggle.querySelector('i');
+                if (document.body.classList.contains('light-theme')) {
+                    icon.className = 'fas fa-moon';
+                } else {
+                    icon.className = 'fas fa-sun';
+                }
+            }
+            
+            // Initialize icon
+            updateThemeIcon();
         }
+    });
         
         // Back to top functionality
         const backToTopBtn = document.getElementById('backToTop');
@@ -806,16 +833,6 @@
         });
     
         
-        // Example: Add hover effect to workshop cards
-        const workshopCards = document.querySelectorAll('.card');
-        workshopCards.forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                card.style.transform = 'translateY(-5px)';
-            });
-            card.addEventListener('mouseleave', () => {
-                card.style.transform = 'translateY(0)';
-            });
-        });
     </script>
 </body>
 
