@@ -29,14 +29,14 @@ class ThemeManager {
     // Update elements that depend on theme
     updateThemeDependentElements() {
         // Update navigation colors
-        const navItems = document.querySelectorAll('#navigation div');
+        const navItems = document.querySelectorAll('#navigation');
         const isDark = document.body.classList.contains('dark-theme');
         
         navItems.forEach(item => {
             if (isDark) {
                 item.style.backgroundColor = '#3a3a2a';
             } else {
-                item.style.backgroundColor = '#e8e0c7';
+                item.style.backgroundColor = '#3a3a2a';
             }
         });
 
