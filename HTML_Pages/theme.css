@@ -9,6 +9,13 @@ body.dark-theme {
     color: #fef8e3;
 }
 
+body.dark-theme .breadcrumbs a, body.dark-theme .breadcrumbs, body.dark-theme .staff-members a, body.dark-theme .staff-members span{
+    
+    color: #fef8e3;
+} 
+
+
+
 /* Theme-aware navigation - applied to all pages */
 body.light-theme #navigation a {
             color: #fef8e3;
@@ -50,9 +57,7 @@ body, #navigation div, button, .card {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#Aroub_workshop h1{
-   color: #fef8e3;
-}
+
 
 #sort{
    color: #fef8e3;
