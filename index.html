@@ -172,7 +172,7 @@
             line-height: 2.5;
         }
 
-        .rating-stars {
+        .rating-stars-home {
             display: flex;
             /* This makes the stars appear in the correct order (1-5) even though
             the HTML is reversed (5-1). This is the key to the CSS trick. */
@@ -185,12 +185,12 @@
         }
 
         /* Hide the actual radio buttons */
-        .rating-stars input[type="radio"] {
+        .rating-stars-home input[type="radio"] {
             display: none;
         }
 
         /* Style the star labels */
-        .rating-stars label {
+        .rating-stars-home label {
             font-size: 1.8rem;
             /* 36px */
             line-height: 2.5rem;
@@ -609,7 +609,7 @@
                     style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
                         <i class="fa-solid fa-user"></i>
-                        <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
+                        <fieldset class="rating-stars-home" style="position: absolute; top: 9px; left: 50px;">
 
                             <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating"
                                     value="5"></label>
@@ -633,7 +633,7 @@
                     style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
                         <i class="fa-solid fa-user"></i>
-                        <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
+                        <fieldset class="rating-stars-home" style="position: absolute; top: 9px; left: 50px;">
 
                             <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating"
                                     value="5"></label>
@@ -659,7 +659,7 @@
                     style=" display: flex; flex-direction: column; align-items: flex-start; position: relative; flex: 1;">
                     <div>
                         <i class="fa-solid fa-user"></i>
-                        <fieldset class="rating-stars" style="position: absolute; top: 9px; left: 50px;">
+                        <fieldset class="rating-stars-home" style="position: absolute; top: 9px; left: 50px;">
 
                             <label title="5 stars">&#9733;<input type="radio" class="star5" name="rating"
                                     value="5"></label>
