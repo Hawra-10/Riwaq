@@ -159,6 +159,12 @@ body.dark-theme legend {
       color: #fef8e3;
 }
 
+body.dark-theme #news {
+ background-color:#f7f2e7;
+ border-color: #f7f2e7;
+    color: #212319; 
+}
+
 
  body.dark-theme select,
  body.dark-theme input[type="text"],
