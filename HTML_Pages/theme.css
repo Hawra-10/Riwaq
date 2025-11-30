@@ -61,6 +61,66 @@ body, #navigation div, button, .card {
 }
 
 
+      body.dark-theme #Reviews {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        body.dark-theme .review-home {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        body.dark-theme .rate-row {
+            display: flex;
+            justify-content: flex-start;
+            /* left text, right stars */
+            align-items: flex-start;
+            width: 100%;
+            margin: 0;
+        }
+
+
+        body.dark-theme .rate-label {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 2.5;
+        }
+
+        body.dark-theme .rating-stars-home {
+            display: flex;
+            /* This makes the stars appear in the correct order (1-5) even though
+            the HTML is reversed (5-1). This is the key to the CSS trick. */
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            /* Aligns stars to the right */
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Hide the actual radio buttons */
+        body.dark-theme .rating-stars-home input[type="radio"] {
+            display: none;
+        }
+
+        /* Style the star labels */
+        body.dark-theme .rating-stars-home label {
+            font-size: 1.8rem;
+            /* 36px */
+            line-height: 2.5rem;
+            /* 40px */
+            color: #f59e0b;
+            /* Tailwind's gray-400 */
+
+        }
+
+
 
 body.dark-theme #sort{
    color: #fef8e3;
