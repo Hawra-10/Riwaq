@@ -9,6 +9,13 @@ body.dark-theme {
     color: #fef8e3;
 }
 
+body.dark-theme .breadcrumbs a, body.dark-theme .breadcrumbs, body.dark-theme .staff-members a, body.dark-theme .staff-members span{
+    
+    color: #fef8e3;
+} 
+
+
+
 /* Theme-aware navigation - applied to all pages */
 body.light-theme #navigation a {
             color: #fef8e3;
@@ -53,11 +60,66 @@ body, #navigation div, button, .card {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#Aroub_workshop h1{
-   color: #fef8e3;
-}
 
-#sort{
+
+body.dark-theme #sort{
    color: #fef8e3;
    background-color: #2a2a1a;
+}
+
+body.dark-theme th, body.dark-theme td{
+    border: 1px solid #fef8e3;
+}
+
+body.dark-theme thead th{
+    background-color: #fef8e3; 
+            color:  #212319;
+}
+
+body.dark-theme tbody td {
+            color: #fef8e3; 
+        }
+
+body.dark-theme .forms { 
+    background-color: #75795f; 
+    box-shadow: 0 1px 3px 0 rgba(255, 255, 255, 0.1);
+}
+
+
+body.dark-theme fieldset {
+    border-top: 1px solid #fef8e3;
+}
+
+body.dark-theme legend {
+    color: #fef8e3;
+}
+
+
+ body.dark-theme label {
+      color: #fef8e3;
+}
+
+
+ body.dark-theme select,
+ body.dark-theme input[type="text"],
+ body.dark-theme input[type="email"],
+ body.dark-theme input[type="date"],
+ body.dark-theme input[type="number"],
+ body.dark-theme textarea {
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color:#999d7f;
+    color: #212319; 
+}
+
+
+ body.dark-theme select:focus,
+ body.dark-theme input[type="text"]:focus,
+ body.dark-theme input[type="email"]:focus,
+ body.dark-theme input[type="date"]:focus,
+ body.dark-theme input[type="number"]:focus,
+ body.dark-theme textarea:focus {
+    outline: none;
+    border-color: #212319;
+    box-shadow: 0 0 0 3px rgba(48, 51, 54, 0.2);
+    color: #212319;
 }
