@@ -63,3 +63,32 @@ body.dark-theme #sort{
    color: #fef8e3;
    background-color: #2a2a1a;
 }
+
+/*///// Tables////*/
+
+
+body.dark-theme #staff-table {
+    background-color: #2a2a1a; 
+    color: #fef8e3; 
+   
+}
+
+body.dark-theme #staff-table th {
+    background-color: #3a3a2a; 
+    color: #fef8e3; 
+}
+
+
+body.dark-theme #staff-table tr {
+    background-color: #fef8e3; 
+}
+
+
+body.dark-theme #staff-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+
+
+
