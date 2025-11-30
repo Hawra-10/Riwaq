@@ -183,3 +183,12 @@ body.dark-theme legend {
     box-shadow: 0 0 0 3px rgba(48, 51, 54, 0.2);
     color: #212319;
 }
+
+
+body.dark-theme .workshop-box {
+      display: flex;
+      border: 1px solid #999d7f;
+      background-color: #999d7f;
+      margin-bottom: 10px;
+      align-items: center;
+    }
