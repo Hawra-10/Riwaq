@@ -374,10 +374,6 @@ textarea:focus {
     box-shadow: 0 0 0 3px rgba(48, 51, 54, 0.2);
 }
 
-input[type="date"] {
-    color: #212319;
-}
-
 /* File Upload  */
 .file-upload-section {
     margin-top: 1.5rem;
