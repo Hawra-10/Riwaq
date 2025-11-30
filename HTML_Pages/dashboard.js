@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const workshops = JSON.parse(localStorage.getItem("providerWorkshops")) || [];
 
 
-localStorage.removeItem("providerWorkshops") //for remove
 
 
 
